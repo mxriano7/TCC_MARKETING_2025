@@ -1,0 +1,75 @@
+/* Estilização geral do header */
+#page {
+    background-color: #d8c7b0; /* Cor de fundo suave e moderna */
+    color: #333; /* Cor do texto mais escura para melhor legibilidade */
+    font-family: 'Helvetica Neue', sans-serif; /* Fonte moderna e clean */
+    height: 100vh; /* Altura do cabeçalho como 100% da altura da viewport */
+    display: flex; /* Usar flexbox para organizar o conteúdo */
+    flex-direction: column; /* Alinhar itens na coluna */
+    justify-content: center; /* Centralizar verticalmente o conteúdo */
+    padding: 20px; /* Padding lateral */
+}
+
+/* Estilização do conteúdo da página */
+#pageContent {
+    padding: 40px 20px;
+    flex: 1; /* Permitir que o conteúdo ocupe o espaço restante */
+    display: flex;
+    flex-direction: column; /* Organizar o conteúdo em coluna */
+    justify-content: center; /* Centralizar verticalmente o conteúdo */
+}
+
+/* Títulos */
+#page h1 {
+    font-size: 3em; /* Tamanho do título mais ousado */
+    color: #5b3a29; /* Cor do título para contraste */
+    margin: 20px 0; /* Margem superior e inferior */
+}
+
+#page h2 {
+    font-size: 2em; /* Tamanho do subtítulo aumentado */
+    color: #5b3a29; /* Mesma cor do título */
+    margin: 10px 0;
+}
+
+#page p {
+    font-size: 1.25em; /* Aumentar o tamanho do texto para melhor legibilidade */
+    font-weight: 400; /* Definir um peso de fonte normal */
+    color: #444; /* Cor do parágrafo escura para legibilidade */
+    line-height: 1.6; /* Aumentar o espaçamento entre linhas para um visual mais arejado */
+    margin: 15px 0; /* Margens superior e inferior */
+    max-width: 700px; /* Limitar a largura do parágrafo para evitar linhas muito longas */
+    text-align: left; /* Garantir que o texto esteja sempre alinhado à esquerda */
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 0; /* Remover arredondamento dos cantos */
+    box-shadow: none; /* Remover sombra */
+}
+
+/* Botão estilizado */
+#page button {
+    text-align: center;
+    background-color: #5b3a29; /* Cor do botão */
+    color: #f8f8f8; /* Cor do texto do botão */
+    border: none;
+    padding: 15px; /* Padding do botão */
+    border-radius: 5px; /* Bordas do botão arredondadas */
+    cursor: pointer;
+    font-size: 1em; /* Tamanho do texto do botão */
+    width: 300px; /* Largura fixa do botão */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    margin-top: 20px; /* Adicionar espaço acima do botão */
+}
+
+#page button:hover {
+    background-color: #8a5b4a; /* Cor do botão ao passar o mouse */
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+
+/* Estilização do footer */
+#footer {
+    background-color: #5b3a29; /* Cor de fundo do footer */
+    color: #f8f8f8; /* Cor do texto do footer */
+    text-align: left; /* Alinhar texto do footer à esquerda */
+    padding: 20px 20px; /* Padding do footer */
+    font-size: 0.9em; /* Tamanho do texto do footer */
+}

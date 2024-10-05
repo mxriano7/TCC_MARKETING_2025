@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ateliê My Pet</title>
+  <link rel="stylesheet" href="Assets/CSS/index.css">
+  <link rel="stylesheet" href="Assets/CSS/nav.css">
+  <link rel="stylesheet" href="Assets/CSS/products.css">
+  <link rel="stylesheet" href="Assets/CSS/form.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body>
+
+  <header id="page">
+    <nav class="nav-bar">
+      <img src="Assets/Img/Src/Logo(2).png" height="300px" width="500px" alt="Logo" class="logo">
+      <div class="slogan">"Qualidade e carinho, <br /> para o seu melhor amigo!"</div>
+      <div class="nav-links" id="navLink">
+        <a href="#" target="_blank">
+          <i class="fa fa-instagram"></i>
+          <span class="tooltiptext">Siga-nos no Instagram</span>
+        </a>
+      </div>
+      <div class="nav-bar-mobile" id="toggleNavBtn">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </nav>
+    <div id="pageContent">
+      <h1>Ateliê My Pet</h1>
+      <h2>"Seu pet bem vestido"</h2>
+      <p>
+        "Escolher nossas peças é optar por exclusividade e design feitos com dedicação. Criamos cada item com carinho e
+        atenção aos detalhes para trazer conforto e estilo ao dia a dia do seu pet, transformando cada momento em algo
+        especial."
+      </p>
+      <button id="toggleCartBtn">Abrir Carrinho</button>
+    </div>
+  </header>
+
+  <div id="products">
+    <h1>Produtos Ateliê My Pet</h1>
+    <div id="container">
+      <!-- Produto 1 -->
+      <div class="product">
+        <div class="product-photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <img src="#" alt="Gola Paul (Macho)" />
+            </div>
+          </div>
+          <div class="description-section">
+            <h3>Descrição:</h3>
+            <span class="description"></span>
+          </div>
+        </div>
+        <div class="details">
+          <div class="product-info">
+            <div class="product-title">
+              <span class="name"></span>
+              <span class="volume"></span>
+            </div>
+            <div class="product-price">
+              <span class="price"></span>
+            </div>
+          </div>
+          <div class="variant">
+            <h3>Unidades</h3>
+            <button class="version-btn" data-product="Gola Paul (Macho)" data-volume="Kit com 10" data-price="25.00"
+              data-description="O Kit com 10 Unidades Gola Paul (Macho) oferece estilo e conforto para seu pet. Feitas com materiais duráveis, são ideais para passeios e ocasiões especiais."
+              data-product-id="1" data-image-src="#">
+              10
+            </button>
+          </div>
+          <button class="add-btn" data-product-id="1">Adicionar</button>
+        </div>
+      </div>
+      <!-- Produto 2 -->
+      <div class="product">
+        <div class="product-photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <img src="#" alt="Camisa Pet (Macho)" />
+            </div>
+          </div>
+          <div class="description-section">
+            <h3>Descrição:</h3>
+            <span class="description"></span>
+          </div>
+        </div>
+        <div class="details">
+          <div class="product-info">
+            <div class="product-title">
+              <span class="name"></span>
+              <span class="volume"></span>
+            </div>
+            <div class="product-price">
+              <span class="price"></span>
+            </div>
+          </div>
+          <div class="variant">
+            <h3>Unidades</h3>
+            <button class="version-btn" data-product="Camisa Pet (Macho)" data-volume="Kit com 15 Lisas"
+              data-price="25.00"
+              data-description="O Kit com 15 Unidades Camisa Pet (Macho) de cores lisas é ideal para seu pet. Feitas com tecido leve, oferecem conforto e estilo para todas as ocasiões."
+              data-product-id="2" data-image-src="#">
+              15 (Lisa)
+            </button>
+            <button class="version-btn" data-product="Camisa Pet (Macho)" data-volume="Kit com 15 Estampadas"
+              data-price="25.00" data-description="O Kit com 15 Unidades Camisa Pet (Macho) de cores estampadas é perfeito para seu amigo. Confeccionadas em tecido leve, oferecem estilo e conforto para qualquer ocasião.
+
+              " data-product-id="2" data-image-src="#">
+              15 (Estampada)
+            </button>
+          </div>
+          <button class="add-btn" data-product-id="2">Adicionar</button>
+        </div>
+      </div>
+      <!-- Produto 3 -->
+      <div class="product">
+        <div class="product-photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <img src="#" alt="Gravata Borboleta (Macho)" />
+            </div>
+          </div>
+          <div class="description-section">
+            <h3>Descrição:</h3>
+            <span class="description"></span>
+          </div>
+        </div>
+        <div class="details">
+          <div class="product-info">
+            <div class="product-title">
+              <span class="name"></span>
+              <span class="volume"></span>
+            </div>
+            <div class="product-price">
+              <span class="price"></span>
+            </div>
+          </div>
+          <div class="variant">
+            <h3>Unidades</h3>
+            <button class="version-btn" data-product="Gravata Borboleta (Macho)" data-volume="Kit com 15"
+              data-price="25.00"
+              data-description="O Kit com 15 Unidades Gravata Borboleta (Macho) de cores sortidas é ideal para ocasiões especiais. Confeccionadas com materiais de qualidade, elas oferecem estilo e conforto ao seu pet."
+              data-product-id="3" data-image-src="#">
+              15
+            </button>
+          </div>
+          <button class="add-btn" data-product-id="3">Adicionar</button>
+        </div>
+      </div>
+      <!-- Produto 4 -->
+      <div class="product">
+        <div class="product-photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <img src="#" alt="Gravata Luxo (Macho)" />
+            </div>
+          </div>
+          <div class="description-section">
+            <h3>Descrição:</h3>
+            <span class="description"></span>
+          </div>
+        </div>
+        <div class="details">
+          <div class="product-info">
+            <div class="product-title">
+              <span class="name"></span>
+              <span class="volume"></span>
+            </div>
+            <div class="product-price">
+              <span class="price"></span>
+            </div>
+          </div>
+          <div class="variant">
+            <h3>Unidades</h3>
+            <button class="version-btn" data-product="Gravata Luxo (Macho)" data-volume="Kit com 10" data-price="25.00"
+              data-description="O Kit com 10 Unidades Gravata Luxo (Macho) é perfeito para seu pet. Feitas com materiais elegantes, proporcionam um toque sofisticado e conforto em todas as ocasiões."
+              data-product-id="4" data-image-src="#">
+              10
+            </button>
+          </div>
+          <button class="add-btn" data-product-id="4">Adicionar</button>
+        </div>
+      </div>
+      <!-- Produto 5 -->
+      <div class="product">
+        <div class="product-photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <img src="#" alt="Gravata Dia a Dia" />
+            </div>
+          </div>
+          <div class="description-section">
+            <h3>Descrição:</h3>
+            <span class="description"></span>
+          </div>
+        </div>
+        <div class="details">
+          <div class="product-info">
+            <div class="product-title">
+              <span class="name"></span>
+              <span class="volume"></span>
+            </div>
+            <div class="product-price">
+              <span class="price"></span>
+            </div>
+          </div>
+          <div class="variant">
+            <h3>Unidades</h3>
+            <button class="version-btn" data-product="Gravata Dia a Dia" data-volume="Kit com 15" data-price="25.00"
+              data-description="O Kit com 15 Unidades Gravata Dia a Dia com estampas sortidas é ideal para pets estilosos. Confeccionadas com tecidos leves, oferecem conforto e charme para o uso diário."
+              data-product-id="5" data-image-src="#">
+              15
+            </button>
+          </div>
+          <button class="add-btn" data-product-id="5">Adicionar</button>
+        </div>
+      </div>
+      <!-- Produto 6 -->
+      <div class="product">
+        <div class="product-photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <img src="#" alt="Gargantilhas (Fêmea)" />
+            </div>
+          </div>
+          <div class="description-section">
+            <h3>Descrição:</h3>
+            <span class="description"></span>
+          </div>
+        </div>
+        <div class="details">
+          <div class="product-info">
+            <div class="product-title">
+              <span class="name"></span>
+              <span class="volume"></span>
+            </div>
+            <div class="product-price">
+              <span class="price"></span>
+            </div>
+          </div>
+          <div class="variant">
+            <h3>Unidades</h3>
+            <button class="version-btn" data-product="Gargantilhas (Fêmea)" data-volume="Kit com 15" data-price="25.00"
+              data-description="O Kit com 15 Unidades Gargantilhas (Fêmea) de cores sortidas é perfeito para seu pet. Confeccionadas com materiais confortáveis, oferecem estilo e versatilidade em todas as ocasiões."
+              data-product-id="6" data-image-src="#">
+              15
+            </button>
+          </div>
+          <button class="add-btn" data-product-id="6">Adicionar</button>
+        </div>
+      </div>
+      <!-- Produto 7 -->
+      <div class="product">
+        <div class="product-photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <img src="#" alt="Gargantilhas em V com Renda" />
+            </div>
+          </div>
+          <div class="description-section">
+            <h3>Descrição:</h3>
+            <span class="description"></span>
+          </div>
+        </div>
+        <div class="details">
+          <div class="product-info">
+            <div class="product-title">
+              <span class="name"></span>
+              <span class="volume"></span>
+            </div>
+            <div class="product-price">
+              <span class="price"></span>
+            </div>
+          </div>
+          <div class="variant">
+            <h3>Unidades</h3>
+            <button class="version-btn" data-product="Gargantilhas em V com Renda" data-volume="Kit com 10"
+              data-price="25.00"
+              data-description="O Kit com 10 Unidades Gargantilhas em V com Renda de cores sortidas é ideal para pets que amam estilo. Confeccionadas com materiais de qualidade, oferecem charme e conforto."
+              data-product-id="7" data-image-src="#">
+              10
+            </button>
+          </div>
+          <button class="add-btn" data-product-id="7">Adicionar</button>
+        </div>
+      </div>
+      <!-- Produto 8 -->
+      <div class="product">
+        <div class="product-photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <img src="#" alt="Colarinho Mini Pompom (Macho)" />
+            </div>
+          </div>
+          <div class="description-section">
+            <h3>Descrição:</h3>
+            <span class="description"></span>
+          </div>
+        </div>
+        <div class="details">
+          <div class="product-info">
+            <div class="product-title">
+              <span class="name"></span>
+              <span class="volume"></span>
+            </div>
+            <div class="product-price">
+              <span class="price"></span>
+            </div>
+          </div>
+          <div class="variant">
+            <h3>Unidades</h3>
+            <button class="version-btn" data-product="Colarinho Mini Pompom (Macho)" data-volume="Kit com 10"
+              data-price="25.00"
+              data-description="O Kit com 10 Unidades Colarinho Mini Pompom (Macho) com estampas sortidas é perfeito para pets estilosos. Confeccionados com materiais leves, oferecem conforto e um visual adorável."
+              data-product-id="8" data-image-src="#">
+              10
+            </button>
+          </div>
+          <button class="add-btn" data-product-id="8">Adicionar</button>
+        </div>
+      </div>
+      <!-- Produto 9 -->
+      <div class="product">
+        <div class="product-photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <img src="#" alt="Gravata Colarinho (Macho)" />
+            </div>
+          </div>
+          <div class="description-section">
+            <h3>Descrição:</h3>
+            <span class="description"></span>
+          </div>
+        </div>
+        <div class="details">
+          <div class="product-info">
+            <div class="product-title">
+              <span class="name"></span>
+              <span class="volume"></span>
+            </div>
+            <div class="product-price">
+              <span class="price"></span>
+            </div>
+          </div>
+          <div class="variant">
+            <h3>Unidades</h3>
+            <button class="version-btn" data-product="Gravata Colarinho (Macho)" data-volume="Kit com 15"
+              data-price="25.00"
+              data-description="O Kit com 15 Unidades Gravata Colarinho (Macho) com estampas sortidas é perfeito para ocasiões especiais. Confeccionadas com materiais de qualidade, oferecem estilo e conforto para seu pet."
+              data-product-id="9" data-image-src="#">
+              15
+            </button>
+          </div>
+          <button class="add-btn" data-product-id="9">Adicionar</button>
+        </div>
+      </div>
+      <!-- Produto 10 -->
+      <div class="product">
+        <div class="product-photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <img src="#" alt="Colarinho (Macho)" />
+            </div>
+          </div>
+          <div class="description-section">
+            <h3>Descrição:</h3>
+            <span class="description"></span>
+          </div>
+        </div>
+        <div class="details">
+          <div class="product-info">
+            <div class="product-title">
+              <span class="name"></span>
+              <span class="volume"></span>
+            </div>
+            <div class="product-price">
+              <span class="price"></span>
+            </div>
+          </div>
+          <div class="variant">
+            <h3>Unidades</h3>
+            <button class="version-btn" data-product="Colarinho (Macho)" data-volume="Kit com 15" data-price="25.00"
+              data-description="O Kit com 15 Unidades Colarinho (Macho) com estampas sortidas é perfeito para pets estilosos. Confeccionados com materiais confortáveis, proporcionam um visual charmoso em diversas ocasiões."
+              data-product-id="10" data-image-src="#">
+              15
+            </button>
+          </div>
+          <button class="add-btn" data-product-id="10">Adicionar</button>
+        </div>
+      </div>
+      <!-- Produto 11 -->
+      <div class="product">
+        <div class="product-photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <img src="#" alt="Colarinho (Fêmea)" />
+            </div>
+          </div>
+          <div class="description-section">
+            <h3>Descrição:</h3>
+            <span class="description"></span>
+          </div>
+        </div>
+        <div class="details">
+          <div class="product-info">
+            <div class="product-title">
+              <span class="name"></span>
+              <span class="volume"></span>
+            </div>
+            <div class="product-price">
+              <span class="price"></span>
+            </div>
+          </div>
+          <div class="variant">
+            <h3>Unidades</h3>
+            <button class="version-btn" data-product="Colarinho (Fêmea)" data-volume="Kit com 10" data-price="25.00"
+              data-description="O Kit com 10 Unidades Colarinho (Fêmea) com estampas sortidas é ideal para pets charmosas. Confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião."
+              data-product-id="11" data-image-src="#">
+              10
+            </button>
+          </div>
+          <button class="add-btn" data-product-id="11">Adicionar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cart-section">
+    <div class="cart">
+      <button id="closeCart">X</button>
+      <h2>Carrinho de Compras</h2>
+      <button id="confirmButton">Continuar Pedido</button>
+      <br />
+      <!-- Carrinho de compras será preenchido dinamicamente pelo JavaScript -->
+      <div id="cartItemsContainer">
+        <!-- Itens do carrinho serão adicionados aqui -->
+      </div>
+      <div class="total">Total: <span id="totalAmount">R$ 0.00</span>
+      </div>
+      <br />
+    </div>
+  </div>
+
+  <div class="order-section">
+    <div id="orderFormContainer">
+      <h2>Formulário do Pedido</h2>
+      <details>
+        <summary>Privacidade e Segurança</summary>
+        <p>
+          A segurança dos seus dados pessoais é muito importante para nós. Usamos suas informações apenas para garantir
+          uma compra segura e personalizada. Nossos processos protegem seus dados contra usos indevidos e são usados
+          para facilitar a logística e os pagamentos. Você pode ficar tranquilo(a), pois valorizamos sua confiança e
+          estamos comprometidos em oferecer uma experiência de compra confiável.
+        </p>
+      </details>
+      <div id="formNavBar">
+        <div>
+          <button id="closeFormBtn">Voltar</button>
+          <button id="openCartInForm" type="button">Carrinho</button>
+        </div>
+        <div id="shippingOptionsContainer">
+        </div>
+      </div>
+      <form id="orderForm" method="POST">
+        <!-- Coluna esquerda -->
+        <div id="idFormColumn" class="form-column">
+          <h2>Dados Pessoais:</h2>
+          <div class="input-group">
+            <input type="text" id="firstName" name="firstName" placeholder="Nome" required aria-label="Nome"
+              maxlength="20" class="input">
+            <label for="firstName" class="user-label">Nome</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="lastName" name="lastName" placeholder="Sobrenome" required aria-label="Sobrenome"
+              maxlength="30" class="input">
+            <label for="lastName" class="user-label">Sobrenome</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="cpfCnpj" name="cpfCnpj" placeholder="CPF ou CNPJ" required aria-label="CPF ou CNPJ"
+              minlength="14" maxlength="18" pattern="[0-9]+" class="input">
+            <label for="cpfCnpj" class="user-label">CPF ou CNPJ</label>
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" name="email" required aria-label="E-mail" aria-describedby="emailError"
+              class="input" placeholder="Digite seu e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+            <label for="email" class="user-label" id="emailLabel">Digite seu e-mail</label>
+          </div>
+          <div class="input-group">
+            <input type="tel" id="telephone" name="telephone" placeholder="Telefone/Celular" required
+              aria-label="Telefone/Celular" maxlength="30" class="input">
+            <label for="telephone" class="user-label">Telefone/Celular</label>
+          </div>
+          <button id="submitOrderBtn" type="button" class="animated-button">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+              </path>
+            </svg>
+            <span class="text">Finalizar Pedido</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <!-- Coluna direita -->
+        <div id="addressFormColumn" class="form-column">
+          <h2>Endereço:</h2>
+          <div class="input-group">
+            <input type="text" id="cep" name="cep" placeholder="CEP" required aria-label="CEP" class="input">
+            <label for="cep" class="user-label">CEP</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="address" name="address" placeholder="Endereço" required aria-label="Endereço"
+              autocomplete="off" class="input">
+            <label for="address" class="user-label">Endereço</label>
+          </div>
+          <div class="input-row">
+            <div class="input-group">
+              <input type="text" id="city" name="city" placeholder="Cidade" required aria-label="Cidade" maxlength="40"
+                class="input">
+              <label for="city" class="user-label">Cidade</label>
+            </div>
+            <div class="input-group">
+              <input type="text" id="state" name="state" placeholder="Estado" required aria-label="Estado"
+                maxlength="30" class="input">
+              <label for="state" class="user-label">Estado</label>
+            </div>
+          </div>
+          <div class="input-group">
+            <input type="text" id="addressNumber" name="addressNumber" placeholder="Número" required aria-label="Número"
+              maxlength="10" class="input">
+            <label for="addressNumber" class="user-label">Número</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="addressComplement" name="addressComplement" placeholder="Complemento do Endereço"
+              aria-label="Complemento de Endereço" class="input">
+            <label for="addressComplement" class="user-label">Complemento do Endereço</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div id="footerInfo">
+      <h3>Informações:</h3>
+      <p><strong>Localização:</strong><br /></p>
+      <p><strong>Horário de Funcionamento:</strong><br />Segunda a Sexta, das 8h às 16h</p>
+      <p><strong>Contato: </strong><a href="https://wa.me/#">Whatsapp</a></p>
+    </div>
+    <div id="footerLogo">
+      <img src="Assets/Img/Src/Logo(2).png" height="250px" width="400px" alt="Logo" class="logo">
+      <p>&copy; 2024 Ateliê My Pet.<br>Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <div id="loadingModal" class="loading-modal">
+    <div class="loading-content">
+      <div class="spinner"></div>
+      <p id="loadingMessage">Enviando pedido...</p>
+      <div id="statusIcon" class="status-icon"></div>
+    </div>
+  </div>
+
+  <script src="Assets/JS/Store.js"></script>
+</body>
+
+</html>
