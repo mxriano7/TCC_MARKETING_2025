@@ -8,11 +8,14 @@
   <link rel="stylesheet" href="Assets/CSS/index.css">
   <link rel="stylesheet" href="Assets/CSS/nav.css">
   <link rel="stylesheet" href="Assets/CSS/products.css">
+  <link rel="stylesheet" href="Assets/CSS/src.css">
   <link rel="stylesheet" href="Assets/CSS/form.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="Assets/CSS/cart.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Marck+Script&family=Yesteryear&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,6 +25,10 @@
       <img src="Assets/Img/Src/Logo(2).png" height="300px" width="500px" alt="Logo" class="logo">
       <div class="slogan">"Qualidade e carinho, <br /> para o seu melhor amigo!"</div>
       <div class="nav-links" id="navLink">
+        <a href="#products">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="tooltiptext">Ir à Loja do Ateliê</span>
+        </a>
         <a href="#" target="_blank">
           <i class="fa fa-instagram"></i>
           <span class="tooltiptext">Siga-nos no Instagram</span>
@@ -37,7 +44,7 @@
       <h1>Ateliê My Pet</h1>
       <h2>"Seu pet bem vestido"</h2>
       <p>
-        "Escolher nossas peças é optar por exclusividade e design feitos com dedicação. Criamos cada item com carinho e
+        "Escolher nossas peças é optar por exclusividade e designs feitos com dedicação. Criamos cada item com carinho e
         atenção aos detalhes para trazer conforto e estilo ao dia a dia do seu pet, transformando cada momento em algo
         especial."
       </p>
@@ -46,7 +53,7 @@
   </header>
 
   <div id="products">
-    <h1>Produtos Ateliê My Pet</h1>
+    <h1>Loja do Ateliê</h1>
     <div id="container">
       <!-- Produto 1 -->
       <div class="product">
@@ -75,7 +82,7 @@
             <h3>Unidades</h3>
             <button class="version-btn" data-product="Gola Paul (Macho)" data-volume="Kit com 10" data-price="25.00"
               data-description="O Kit com 10 Unidades Gola Paul (Macho) oferece estilo e conforto para seu pet. Feitas com materiais duráveis, são ideais para passeios e ocasiões especiais."
-              data-product-id="1" data-image-src="#">
+              data-product-id="1" data-image-src="Assets/Img/Img.Store/Gola-Paul-1.png">
               10
             </button>
           </div>
@@ -110,13 +117,13 @@
             <button class="version-btn" data-product="Camisa Pet (Macho)" data-volume="Kit com 15 Lisas"
               data-price="25.00"
               data-description="O Kit com 15 Unidades Camisa Pet (Macho) de cores lisas é ideal para seu pet. Feitas com tecido leve, oferecem conforto e estilo para todas as ocasiões."
-              data-product-id="2" data-image-src="#">
+              data-product-id="2" data-image-src="Assets/Img/Img.Store/Camisa-Macho.png">
               15 (Lisa)
             </button>
             <button class="version-btn" data-product="Camisa Pet (Macho)" data-volume="Kit com 15 Estampadas"
               data-price="25.00" data-description="O Kit com 15 Unidades Camisa Pet (Macho) de cores estampadas é perfeito para seu amigo. Confeccionadas em tecido leve, oferecem estilo e conforto para qualquer ocasião.
 
-              " data-product-id="2" data-image-src="#">
+              " data-product-id="2" data-image-src="Assets/Img/Img.Store/Camisa-Macho.png">
               15 (Estampada)
             </button>
           </div>
@@ -151,7 +158,7 @@
             <button class="version-btn" data-product="Gravata Borboleta (Macho)" data-volume="Kit com 15"
               data-price="25.00"
               data-description="O Kit com 15 Unidades Gravata Borboleta (Macho) de cores sortidas é ideal para ocasiões especiais. Confeccionadas com materiais de qualidade, elas oferecem estilo e conforto ao seu pet."
-              data-product-id="3" data-image-src="#">
+              data-product-id="3" data-image-src="Assets/Img/Img.Store/Gravatas-1.png">
               15
             </button>
           </div>
@@ -185,7 +192,7 @@
             <h3>Unidades</h3>
             <button class="version-btn" data-product="Gravata Luxo (Macho)" data-volume="Kit com 10" data-price="25.00"
               data-description="O Kit com 10 Unidades Gravata Luxo (Macho) é perfeito para seu pet. Feitas com materiais elegantes, proporcionam um toque sofisticado e conforto em todas as ocasiões."
-              data-product-id="4" data-image-src="#">
+              data-product-id="4" data-image-src="Assets/Img/Img.Store/Gravatas-Luxo.png">
               10
             </button>
           </div>
@@ -197,7 +204,7 @@
         <div class="product-photo">
           <div class="photo-container">
             <div class="photo-main">
-              <img src="#" alt="Gravata Dia a Dia" />
+              <img src="" alt="Gravata Dia a Dia" />
             </div>
           </div>
           <div class="description-section">
@@ -219,7 +226,7 @@
             <h3>Unidades</h3>
             <button class="version-btn" data-product="Gravata Dia a Dia" data-volume="Kit com 15" data-price="25.00"
               data-description="O Kit com 15 Unidades Gravata Dia a Dia com estampas sortidas é ideal para pets estilosos. Confeccionadas com tecidos leves, oferecem conforto e charme para o uso diário."
-              data-product-id="5" data-image-src="#">
+              data-product-id="5" data-image-src="Assets/Img/Img.Store/Gravatas-2.png">
               15
             </button>
           </div>
@@ -253,7 +260,7 @@
             <h3>Unidades</h3>
             <button class="version-btn" data-product="Gargantilhas (Fêmea)" data-volume="Kit com 15" data-price="25.00"
               data-description="O Kit com 15 Unidades Gargantilhas (Fêmea) de cores sortidas é perfeito para seu pet. Confeccionadas com materiais confortáveis, oferecem estilo e versatilidade em todas as ocasiões."
-              data-product-id="6" data-image-src="#">
+              data-product-id="6" data-image-src="Assets/Img/Img.Store/Gargantilhas-Femeas.png">
               15
             </button>
           </div>
@@ -265,7 +272,7 @@
         <div class="product-photo">
           <div class="photo-container">
             <div class="photo-main">
-              <img src="#" alt="Gargantilhas em V com Renda" />
+              <img src="Assets/Img/Img.Store/Gargantilhas-1.png" alt="Gargantilhas em V com Renda" />
             </div>
           </div>
           <div class="description-section">
@@ -288,7 +295,7 @@
             <button class="version-btn" data-product="Gargantilhas em V com Renda" data-volume="Kit com 10"
               data-price="25.00"
               data-description="O Kit com 10 Unidades Gargantilhas em V com Renda de cores sortidas é ideal para pets que amam estilo. Confeccionadas com materiais de qualidade, oferecem charme e conforto."
-              data-product-id="7" data-image-src="#">
+              data-product-id="7" data-image-src="Assets/Img/Img.Store/Gargantilhas-1.png">
               10
             </button>
           </div>
@@ -323,7 +330,7 @@
             <button class="version-btn" data-product="Colarinho Mini Pompom (Macho)" data-volume="Kit com 10"
               data-price="25.00"
               data-description="O Kit com 10 Unidades Colarinho Mini Pompom (Macho) com estampas sortidas é perfeito para pets estilosos. Confeccionados com materiais leves, oferecem conforto e um visual adorável."
-              data-product-id="8" data-image-src="#">
+              data-product-id="8" data-image-src="Assets/Img/Img.Store/Colarinho-1.png">
               10
             </button>
           </div>
@@ -358,7 +365,7 @@
             <button class="version-btn" data-product="Gravata Colarinho (Macho)" data-volume="Kit com 15"
               data-price="25.00"
               data-description="O Kit com 15 Unidades Gravata Colarinho (Macho) com estampas sortidas é perfeito para ocasiões especiais. Confeccionadas com materiais de qualidade, oferecem estilo e conforto para seu pet."
-              data-product-id="9" data-image-src="#">
+              data-product-id="9" data-image-src="Assets/Img/Img.Store/Colarinho-1.png">
               15
             </button>
           </div>
@@ -392,7 +399,7 @@
             <h3>Unidades</h3>
             <button class="version-btn" data-product="Colarinho (Macho)" data-volume="Kit com 15" data-price="25.00"
               data-description="O Kit com 15 Unidades Colarinho (Macho) com estampas sortidas é perfeito para pets estilosos. Confeccionados com materiais confortáveis, proporcionam um visual charmoso em diversas ocasiões."
-              data-product-id="10" data-image-src="#">
+              data-product-id="10" data-image-src="Assets/Img/Img.Store/Colarinho-Macho.png">
               15
             </button>
           </div>
@@ -426,7 +433,7 @@
             <h3>Unidades</h3>
             <button class="version-btn" data-product="Colarinho (Fêmea)" data-volume="Kit com 10" data-price="25.00"
               data-description="O Kit com 10 Unidades Colarinho (Fêmea) com estampas sortidas é ideal para pets charmosas. Confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião."
-              data-product-id="11" data-image-src="#">
+              data-product-id="11" data-image-src="Assets/Img/Img.Store/Colarinho-Femea.png">
               10
             </button>
           </div>

@@ -5,37 +5,37 @@ document.addEventListener('DOMContentLoaded', function () {
     // Defina aqui o produto padrão.
     updateProduct('Gola Paul (Macho)', 'Kit com 10', '25.00',
         'O Kit com 10 Unidades Gola Paul (Macho) oferece estilo e conforto para seu pet. Feitas com materiais duráveis, são ideais para passeios e ocasiões especiais.',
-        1, '#');
+        1, 'Assets/Img/Img.Store/Gola-Paul-1.png');
     updateProduct('Camisa Pet (Macho)', 'Kit com 15 Estampadas', '25.00',
         'O Kit com 15 Unidades Camisa Pet (Macho) de cores estampadas é perfeito para seu amigo. Confeccionadas em tecido leve, oferecem estilo e conforto para qualquer ocasião.',
-        2, '.#');
+        2, 'Assets/Img/Img.Store/Camisa-Macho.png');
     updateProduct('Gravata Borboleta (Macho)', 'Kit com 15', '25.00',
         'O Kit com 15 Unidades Gravata Borboleta (Macho) de cores sortidas é ideal para ocasiões especiais. Confeccionadas com materiais de qualidade, elas oferecem estilo e conforto ao seu pet.',
-        3, '.#');
+        3, 'Assets/Img/Img.Store/Gravatas-1.png');
     updateProduct('Gravata Luxo (Macho)', 'Kit com 10', '25.00',
         'O Kit com 10 Unidades Gravata Luxo (Macho) é perfeito para seu pet. Feitas com materiais elegantes, proporcionam um toque sofisticado e conforto em todas as ocasiões.',
-        4, '#');
+        4, 'Assets/Img/Img.Store/Gravatas-Luxo.png');
     updateProduct('Gravata Dia a Dia', 'Kit com 15', '25.00',
         'O Kit com 15 Unidades Gravata Dia a Dia com estampas sortidas é ideal para pets estilosos. Confeccionadas com tecidos leves, oferecem conforto e charme para o uso diário.',
-        5, '.#');
+        5, 'Assets/Img/Img.Store/Gravatas-2.png');
     updateProduct('Gargantilhas (Fêmea)', 'Kit com 15', '25.00',
         'O Kit com 15 Unidades Gargantilhas (Fêmea) de cores sortidas é perfeito para seu pet. Confeccionadas com materiais confortáveis, oferecem estilo e versatilidade em todas as ocasiões.',
-        6, '#');
+        6, 'Assets/Img/Img.Store/Gargantilhas-Femeas.png');
     updateProduct('Gargantilhas em V com Renda', 'Kit com 10', '25.00',
         'O Kit com 10 Unidades Gargantilhas em V com Renda de cores sortidas é ideal para pets que amam estilo. Confeccionadas com materiais de qualidade, oferecem charme e conforto.',
-        7, '.#');
+        7, 'Assets/Img/Img.Store/Gargantilhas-1.png');
     updateProduct('Colarinho Mini Pompom (Macho)', 'Kit com 10', '25.00',
         'O Kit com 10 Unidades Colarinho Mini Pompom (Macho) com estampas sortidas é perfeito para pets estilosos. Confeccionados com materiais leves, oferecem conforto e um visual adorável.',
-        8, '.#');
+        8, 'Assets/Img/Img.Store/Colarinho-1.png');
     updateProduct('Gravata Colarinho (Macho)', 'Kit com 15', '25.00',
         'O Kit com 15 Unidades Gravata Colarinho (Macho) com estampas sortidas é perfeito para ocasiões especiais. Confeccionadas com materiais de qualidade, oferecem estilo e conforto para seu pet.',
-        9, '#');
+        9, 'Assets/Img/Img.Store/Colarinho-1.png');
     updateProduct('Colarinho (Macho)', 'Kit com 15', '25.00',
         'O Kit com 15 Unidades Colarinho (Macho) com estampas sortidas é perfeito para pets estilosos. Confeccionados com materiais confortáveis, proporcionam um visual charmoso em diversas ocasiões.',
-        10, '.#');
+        10, 'Assets/Img/Img.Store/Colarinho-Macho.png');
     updateProduct('Colarinho (Fêmea)', 'Kit com 10', '25.00',
         'O Kit com 10 Unidades Colarinho (Fêmea) com estampas sortidas é ideal para pets charmosas. Confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião.',
-        11, '.#');
+        11, 'Assets/Img/Img.Store/Colarinho-Femea.png');
 
     // Eventos da barra de navegação.
     const toggleNavBtn = document.getElementById("toggleNavBtn");
@@ -56,21 +56,63 @@ document.addEventListener('DOMContentLoaded', function () {
         handleRemoveProductListeners();
     });
 
-    toggleCartBtn.addEventListener("click", function () {
+    function handleCartForLargerScreens() {
         const isCartVisible = cartSection.classList.contains('show');
-        cartSection.classList.toggle('show');
-        cartSection.style.display = isCartVisible ? 'none' : 'block';
+
+        if (isCartVisible) {
+            cartSection.classList.remove('show');
+            cartSection.style.display = 'none';
+        } else {
+            cartSection.style.display = 'block';
+            cartSection.classList.add('show');
+        }
+
         toggleCartBtn.textContent = isCartVisible ? 'Abrir Carrinho' : 'Fechar Carrinho';
+    }
+
+    function handleCartForSmallerScreens() {
+        const isCartVisible = cartSection.classList.contains('show');
+
+        if (isCartVisible) {
+            cartSection.classList.remove('show');
+            cartSection.classList.remove('slideInCart');
+            cartSection.classList.add('slideOutCart');
+
+            setTimeout(() => {
+                cartSection.style.display = 'none';
+            }, 300);
+
+            toggleCartBtn.textContent = 'Abrir Carrinho';
+        } else {
+            cartSection.classList.remove('slideOutCart');
+            cartSection.classList.add('slideInCart');
+
+            setTimeout(() => {
+                cartSection.style.display = 'block';
+                cartSection.classList.add('show');
+            }, 0);
+
+            toggleCartBtn.textContent = 'Fechar Carrinho';
+        }
+    }
+
+    toggleCartBtn.addEventListener("click", function () {
+        if (window.innerWidth < 1024) {
+            handleCartForSmallerScreens();
+        } else {
+            handleCartForLargerScreens();
+        }
     });
 
     closeCartBtn.addEventListener('click', function () {
-        const isCartVisible = cartSection.classList.contains('show');
-        cartSection.classList.toggle('show');
-        cartSection.style.display = isCartVisible ? 'none' : 'block';
-        toggleCartBtn.textContent = isCartVisible ? 'Abrir Carrinho' : 'Fechar Carrinho';
+        if (window.innerWidth < 1024) {
+            handleCartForSmallerScreens();
+        } else {
+            handleCartForLargerScreens();
+        }
     });
 
-    observer.observe(document.querySelector('.cart-section'), {
+    observer.observe(cartSection, {
         childList: true,
         subtree: true
     });
@@ -298,13 +340,28 @@ function createCartItem(itemIdentifier, price) {
     });
     cartItem.appendChild(removeButton);
 
+    // Nome do item
+    const cartName = document.createElement('span');
+    cartName.classList.add('cart-name');
+    cartName.textContent = itemIdentifier;
+    cartItem.appendChild(cartName);
+    cartItem.appendChild(document.createElement('br'));
+
+
+    // Preço do item
+    const cartPrice = document.createElement('span');
+    cartPrice.classList.add('cart-price');
+    cartPrice.textContent = `R$ ${price.toFixed(2)} (Unidade)`;
+    cartItem.appendChild(cartPrice);
+    cartItem.appendChild(document.createElement('br'));
+
     // Input de quantidade do produto
     const quantityInput = document.createElement('input');
     quantityInput.type = 'number';
     quantityInput.classList.add('quantity');
     quantityInput.value = '1';
     quantityInput.min = '1';
-    quantityInput.max = '2';
+    quantityInput.max = '12';
     quantityInput.autocomplete = 'off';
     quantityInput.name = 'quantity';
     quantityInput.addEventListener('change', function () {
@@ -313,41 +370,18 @@ function createCartItem(itemIdentifier, price) {
 
     });
     cartItem.appendChild(quantityInput);
-    cartItem.appendChild(document.createElement('br'));
-
-    // Nome do item
-    const cartName = document.createElement('span');
-    cartName.classList.add('cart-name');
-    cartName.textContent = itemIdentifier;
-    cartItem.appendChild(cartName);
-    cartItem.appendChild(document.createElement('br'));
-
-    // Preço do item
-    const cartPrice = document.createElement('span');
-    cartPrice.classList.add('cart-price');
-    cartPrice.textContent = `R$ ${price.toFixed(2)} (Kit)`;
-    cartItem.appendChild(cartPrice);
-    cartItem.appendChild(document.createElement('br'));
 
     // Subtotal do item
     const subtotalSpan = document.createElement('span');
     subtotalSpan.classList.add('subtotal');
     subtotalSpan.textContent = `Subtotal: R$ ${price.toFixed(2)}`;
     cartItem.appendChild(subtotalSpan);
-    cartItem.appendChild(document.createElement('br'));
 
     // Divisória entre itens
     const separator = document.createElement('hr');
     separator.classList.add('cart-item-separator');
     cartItem.appendChild(separator);
 
-    const cartSection = document.querySelector(".cart-section");
-    cartSection.appendChild(cartItem);
-
-    cartSection.classList.add('show');
-    cartSection.style.display = 'block';
-    const toggleCartBtn = document.getElementById('toggleCartBtn');
-    toggleCartBtn.textContent = 'Fechar Carrinho';
     return cartItem;
 }
 
@@ -531,11 +565,6 @@ function displayShippingOptions(options) {
             updateCartWithShipping(price);
         });
     });
-
-    const previousSelection = document.querySelector(`input[name="shippingOption"][value="${newSelectedOption}"]`);
-    if (previousSelection) {
-        previousSelection.checked = true;
-    }
 }
 
 // Atualiza o total do carrinho incluindo o custo de envio.
@@ -554,11 +583,12 @@ function updateCartWithShipping(shippingCost) {
         }
     });
 
-    if (!isNaN(shippingCost)) {
+    if (!isNaN(shippingCost) && shippingCost > 0) {
         total += shippingCost;
+        document.getElementById('totalAmount').textContent = `R$ ${total.toFixed(2)} (Frete incluído)`;
+    } else {
+        document.getElementById('totalAmount').textContent = `R$ ${total.toFixed(2)}`;
     }
-
-    document.getElementById('totalAmount').textContent = `R$ ${total.toFixed(2)}`;
 }
 
 // Atualiza o estado da última alteração do carrinho e, se o CEP não estiver vazio, chama a função debouncedFetchFreight.

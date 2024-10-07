@@ -44,10 +44,10 @@
     margin-right: 20px;
     background-clip: text;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
-    color: snow;
+    color: #774110;
     transition: color 0.5s ease;
     cursor: pointer;
-    font-family: "Amatic SC", sans-serif;
+    font-family: "Dancing Script", cursive;
     font-size: calc(1rem + 2vw);
     font-weight: bold;
 }

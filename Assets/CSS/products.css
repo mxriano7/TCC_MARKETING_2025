@@ -1,14 +1,6 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: snow; 
-    color: #1c1319;
-    margin: 0;
-    padding: 0;
-}
-
 #products {
     padding: 30px;
-    background-color: white;
+    background-color: snow;
 }
 
 #products h1 {
@@ -33,7 +25,7 @@ body {
     margin: 15px 0;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .product:hover {
@@ -46,11 +38,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 250px;
+}
+
+.photo-container {
+    width: 60%;
 }
 
 .photo-main img {
-    width: 60%;
-    height: 220px;
+    justify-content: center;
+    width: 100%;
+    height: 225px;
     object-fit: fill;
     border-radius: 8px;
 }
@@ -58,11 +56,10 @@ body {
 .description-section {
     padding: 0 1rem;
     border-radius: 12px;
-    border-top: 2px solid #42210a; 
-    border-bottom: 2px solid #42210a; 
+    border: 2px solid #42210a; 
     background-color: snow;
-    width: 40%;
-    height: 220px;
+    width: 30%;
+    height: 250px;
     overflow: hidden;
 }
 
@@ -76,6 +73,8 @@ body {
     font-size: 1rem;
     line-height: 1;
     color: #7f6f61;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .details {
@@ -95,16 +94,22 @@ body {
 }
 
 .product-title .name {
+    text-align: center;
+    font-size: 1.5rem;
     font-weight: bold;
+    color: #42210a; 
+    margin: 10px 0;
 }
 
 .product-title .volume {
     background-color: #ae8b6d; 
-    margin: 0 1em;
-    padding: 3px 8px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: snow; 
+    margin: 10px 1rem;
+    padding: 5px;
     border-radius: 5px;
-    color: snow;
-    font-size: 0.9rem;
 }
 
 .product-info {
@@ -140,11 +145,12 @@ body {
     font-size: 0.95rem;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .version-btn:hover {
-    background-color: #ae8b6d; 
+    border-color: #ae8b6d; 
+    background-color: #42210a; 
     color: snow;
 }
 
@@ -157,9 +163,50 @@ body {
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .add-btn:hover {
     background-color:#ae8b6d; 
+}
+
+.message-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem;
+    background-color: brown;
+    color: snow;
+    font-size: 1.5rem;
+    display: none;
+    z-index: 4000;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    width: auto;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInOut 2.5s ease;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
