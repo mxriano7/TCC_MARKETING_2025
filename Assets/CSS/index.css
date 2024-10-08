@@ -23,11 +23,11 @@ body {
 
 @keyframes slideIn {
     from {
-        background-position: 250% calc(50% + 2.5em);
+        background-position: 180% calc(50% + 3em);
     }
 
     to {
-        background-position: right calc(50% + 2.5em);
+        background-position: right calc(50% + 3em);
     }
 }
 
@@ -45,9 +45,9 @@ body {
     position: relative;
     overflow: hidden;
     background-color: #d8c7b0;
-    background-image: url(../Img/Img.Store/Laços-Macho.png);
+    background-image: url(../Img/Img.Store/Camisa-Macho.png);
     background-size: 800px;
-    background-position: right calc(50% + 2.5em);
+    background-position: right calc(50% + 3em);
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
@@ -108,6 +108,54 @@ body {
     hyphens: auto;
 }
 
+footer {
+    background-color: #1c1319;
+    color: snow;
+    padding: 2rem 5%;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid snow;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footerLogo,
+#footerInfo {
+    flex: 1;
+    text-align: center;
+}
+
+#footerInfo {
+    text-align: left;
+}
+
+#footerLogo img {
+    max-width: 300px;
+    height: auto;
+}
+
+#footerInfo a {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: snow;
+    transition: color 0.3s ease;
+}
+
+#footerInfo a:hover {
+    color: brown;
+}
+
+footer p,
+footer h3 {
+    margin: 1.2rem 0;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
 @media only screen and (max-width: 1300px) {
     #page {
         background-size: calc(700px + 10vw);
@@ -152,5 +200,20 @@ body {
         text-align: center;
         margin: 0.5rem auto;
         animation-delay: 2.5s;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    footer h3 {
+        font-size: calc(1rem + 0.5vw);
+    }
+
+    footer p {
+        font-size: calc(0.75rem + 0.5vw);
+        margin-bottom: 1.2rem;
     }
 }

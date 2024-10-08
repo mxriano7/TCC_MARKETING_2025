@@ -3,37 +3,37 @@
 // Eventos de DOMContentLoaded.
 document.addEventListener('DOMContentLoaded', function () {
     // Defina aqui o produto padrão.
-    updateProduct('Gola Paul (Macho)', 'Kit com 10', '25.00',
+    updateProduct('Gola Paul (Macho)', 'Superman-1', '25.00',
         'O Kit com 10 Unidades Gola Paul (Macho) oferece estilo e conforto para seu pet. Feitas com materiais duráveis, são ideais para passeios e ocasiões especiais.',
         1, 'Assets/Img/Img.Store/Gola-Paul-1.png');
-    updateProduct('Camisa Pet (Macho)', 'Kit com 15 Estampadas', '25.00',
-        'O Kit com 15 Unidades Camisa Pet (Macho) de cores estampadas é perfeito para seu amigo. Confeccionadas em tecido leve, oferecem estilo e conforto para qualquer ocasião.',
+    updateProduct('Camisa Pet (Macho)', '15 Lisas', '25.00',
+        'O Kit com 15 Unidades Camisa Pet (Macho) de cores lisas é ideal para seu pet. Feitas com tecido leve, oferecem conforto e estilo para todas as ocasiões.',
         2, 'Assets/Img/Img.Store/Camisa-Macho.png');
-    updateProduct('Gravata Borboleta (Macho)', 'Kit com 15', '25.00',
+    updateProduct('Gravata Borboleta (Macho)', 'KIT-15', '25.00',
         'O Kit com 15 Unidades Gravata Borboleta (Macho) de cores sortidas é ideal para ocasiões especiais. Confeccionadas com materiais de qualidade, elas oferecem estilo e conforto ao seu pet.',
         3, 'Assets/Img/Img.Store/Gravatas-1.png');
-    updateProduct('Gravata Luxo (Macho)', 'Kit com 10', '25.00',
+    updateProduct('Gravata Luxo (Macho)', 'Pato Donald', '25.00',
         'O Kit com 10 Unidades Gravata Luxo (Macho) é perfeito para seu pet. Feitas com materiais elegantes, proporcionam um toque sofisticado e conforto em todas as ocasiões.',
-        4, 'Assets/Img/Img.Store/Gravatas-Luxo.png');
-    updateProduct('Gravata Dia a Dia', 'Kit com 15', '25.00',
+        4, 'Assets/Img/Img.Store/Gravatas-Luxo-1.png');
+    updateProduct('Gravata Dia a Dia', 'KIT-15', '25.00',
         'O Kit com 15 Unidades Gravata Dia a Dia com estampas sortidas é ideal para pets estilosos. Confeccionadas com tecidos leves, oferecem conforto e charme para o uso diário.',
         5, 'Assets/Img/Img.Store/Gravatas-2.png');
-    updateProduct('Gargantilhas (Fêmea)', 'Kit com 15', '25.00',
-        'O Kit com 15 Unidades Gargantilhas (Fêmea) de cores sortidas é perfeito para seu pet. Confeccionadas com materiais confortáveis, oferecem estilo e versatilidade em todas as ocasiões.',
+    updateProduct('Gargantilhas (Fêmea)', 'KIT-15', '25.00',
+        'O Kit com 15 Unidades Gargantilhas (Fêmea) com estampas sortidas é perfeito para seu pet. Confeccionadas com materiais confortáveis, oferecem estilo e versatilidade em todas as ocasiões.',
         6, 'Assets/Img/Img.Store/Gargantilhas-Femeas.png');
-    updateProduct('Gargantilhas em V com Renda', 'Kit com 10', '25.00',
+    updateProduct('Gargantilhas em V com Renda', 'KIT-10', '25.00',
         'O Kit com 10 Unidades Gargantilhas em V com Renda de cores sortidas é ideal para pets que amam estilo. Confeccionadas com materiais de qualidade, oferecem charme e conforto.',
         7, 'Assets/Img/Img.Store/Gargantilhas-1.png');
-    updateProduct('Colarinho Mini Pompom (Macho)', 'Kit com 10', '25.00',
+    updateProduct('Colarinho Mini Pompom (Macho)', 'KIT-10', '25.00',
         'O Kit com 10 Unidades Colarinho Mini Pompom (Macho) com estampas sortidas é perfeito para pets estilosos. Confeccionados com materiais leves, oferecem conforto e um visual adorável.',
         8, 'Assets/Img/Img.Store/Colarinho-1.png');
-    updateProduct('Gravata Colarinho (Macho)', 'Kit com 15', '25.00',
+    updateProduct('Gravata Colarinho (Macho)', 'KIT-15', '25.00',
         'O Kit com 15 Unidades Gravata Colarinho (Macho) com estampas sortidas é perfeito para ocasiões especiais. Confeccionadas com materiais de qualidade, oferecem estilo e conforto para seu pet.',
-        9, 'Assets/Img/Img.Store/Colarinho-1.png');
-    updateProduct('Colarinho (Macho)', 'Kit com 15', '25.00',
-        'O Kit com 15 Unidades Colarinho (Macho) com estampas sortidas é perfeito para pets estilosos. Confeccionados com materiais confortáveis, proporcionam um visual charmoso em diversas ocasiões.',
-        10, 'Assets/Img/Img.Store/Colarinho-Macho.png');
-    updateProduct('Colarinho (Fêmea)', 'Kit com 10', '25.00',
+        9, 'Assets/Img/Img.Store/Gravatas-Colarinho-Macho.png');
+    updateProduct('Colarinho (Macho)', 'KIT-10', '25.00',
+        'O Kit com 10 Unidades Colarinho (Macho) com estampas sortidas é perfeito para pets estilosos. Confeccionados com materiais confortáveis, proporcionam um visual charmoso em diversas ocasiões.',
+        10, 'Assets/Img/Img.Store/Colarinho-Macho-1.png');
+    updateProduct('Colarinho (Fêmea)', 'KIT-10', '25.00',
         'O Kit com 10 Unidades Colarinho (Fêmea) com estampas sortidas é ideal para pets charmosas. Confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião.',
         11, 'Assets/Img/Img.Store/Colarinho-Femea.png');
 

@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 140px;
+    height: 120px;
     background-color: #1c1319;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -28,7 +28,7 @@
     width: 150px;
     padding: 10px 0;
     transition: all 0.3s ease;
-    color: snow;
+    color: #774110;
     font-size: 36px;
     text-decoration: none;
     border-radius: 10px;
@@ -37,7 +37,7 @@
 }
 
 .nav-links a:hover {
-    color: #ae8b6d;
+    color: snow;
 }
 
 .slogan {
@@ -53,11 +53,11 @@
 }
 
 .slogan:hover {
-    color: #ae8b6d;
+    color: snow;
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 180px;
     height: auto;
 }
 
@@ -69,7 +69,7 @@
 .tooltiptext {
     visibility: hidden;
     width: 100px;
-    color: #ae8b6d;
+    color: snow;
     text-align: center;
     z-index: 1;
     opacity: 0;

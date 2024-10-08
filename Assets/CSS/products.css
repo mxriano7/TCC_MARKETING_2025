@@ -1,18 +1,25 @@
 #products {
-    padding: 30px;
+    width: 100vw;
     background-color: snow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 #products h1 {
     text-align: center;
     color: #42210a; 
-    font-size: 2.2rem;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin: 2rem auto 1rem auto;
 }
 
 #container {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 1em;
     justify-content: space-around;
 }
 
@@ -22,7 +29,7 @@
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     width: 48%;
-    margin: 15px 0;
+    margin: 15px auto;
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
@@ -149,14 +156,13 @@
 }
 
 .version-btn:hover {
-    border-color: #ae8b6d; 
-    background-color: #42210a; 
+    background-color: #ae8b6d; 
     color: snow;
 }
 
 .add-btn {
     padding: 10px;
-    border: none;
+    border: 2px solid #42210a; 
     background-color: #42210a; 
     color: snow;
     font-size: 1rem;
@@ -167,7 +173,13 @@
 }
 
 .add-btn:hover {
+    transform: scale(1.01);
     background-color:#ae8b6d; 
+}
+
+.add-btn:active {
+    transform: scale(1.0);
+    background-color: #754c32;
 }
 
 .message-card {
