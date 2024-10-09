@@ -842,6 +842,7 @@ function submitOrder(event) {
         pageSection.style.display = '';
         productsSection.style.display = '';
         footerSection.style.display = '';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         return;
     }
 

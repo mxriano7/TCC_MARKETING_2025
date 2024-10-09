@@ -7,7 +7,7 @@
 }
 
 #orderFormContainer {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -123,7 +123,7 @@ form {
 
 #shippingOptionsContainer {
     width: 60%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: snow;
     color: #140f07;
@@ -131,16 +131,16 @@ form {
 }
 
 .shipping-option {
-    width: 50%;
+    width: 45%;
     height: auto;
     display: flex;
     justify-content: center;
     text-align: center;
     background-color: brown;
     color: snow;
-    border-radius: 0;
+    border-radius: 5px;
     padding: 0;
-    margin: 0;
+    margin: 0 0.5rem;
 }
 
 .shipping-option label {
@@ -331,7 +331,6 @@ form {
         text-align: center;
         background-color: brown;
         color: snow;
-        border-radius: 0;
         padding: 0;
         margin: 10px 0;
     }

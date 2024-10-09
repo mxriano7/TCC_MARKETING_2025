@@ -15,6 +15,7 @@
     transition: transform 0.5s ease;
     z-index: 1000;
     opacity: 1;
+    animation: fadeIn 1s ease-out forwards;
 }
 
 .nav-links {

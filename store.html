@@ -5,12 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ateliê My Pet</title>
+  <link rel="stylesheet" href="Assets/CSS/src.css">
   <link rel="stylesheet" href="Assets/CSS/index.css">
   <link rel="stylesheet" href="Assets/CSS/nav.css">
+  <link rel="stylesheet" href="Assets/CSS/itens.css">
+  <link rel="stylesheet" href="Assets/CSS/about.css">
   <link rel="stylesheet" href="Assets/CSS/products.css">
-  <link rel="stylesheet" href="Assets/CSS/src.css">
-  <link rel="stylesheet" href="Assets/CSS/form.css">
   <link rel="stylesheet" href="Assets/CSS/cart.css">
+  <link rel="stylesheet" href="Assets/CSS/form.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +22,16 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body class="no-scroll">
+
+  <div id="newLoadingModal" class="new-loading-modal">
+    <div class="new-loading-content">
+      <div class="new-spinner"></div>
+      <div class="new-loading-message">
+        <h1>Carregando,<br>por favor aguarde...</h1>
+      </div>
+    </div>
+  </div>
 
   <header id="page">
     <nav class="nav-bar">
@@ -61,6 +72,45 @@
       <button id="toggleCartBtn">Abrir Carrinho</button>
     </div>
   </header>
+
+  <section id="itens">
+    <div id="itensContent">
+      <p id="itensP1">Descubra as novidades que preparamos para você acessando nossa loja!</p>
+      <p id="itensP2">Aproveite e monte seu pedido como preferir!</p>
+    </div>
+    <div id="itensContainer">
+      <div class="card">
+        <img src="Assets/Img/Img.Store/Colarinho-Femea.png" alt="Produto">
+      </div>
+      <div class="card">
+        <img src="Assets/Img/Img.Store/Gravatas-2.png" alt="Produto">
+      </div>
+      <div class="card">
+        <img src="Assets/Img/Img.Store/Colarinho-1.png" alt="Produto">
+      </div>
+      <div class="card">
+        <img src="Assets/Img/Img.Store/Gravatas-Luxo-1.png" alt="Produto">
+      </div>
+    </div>
+  </section>
+
+  <secction id="about">
+    <div class="content">
+      <h2>História do Ateliê</h2>
+      <p>O Ateliê My Pet surgiu pelas mãos de Fabiana, uma artista apaixonada por pets e dona de um talento especial
+        para
+        criar peças únicas. Inspirada pelo carinho que sempre teve pelos animais, ela transformou seu amor e
+        criatividade
+        em um espaço onde cada detalhe é pensado para levar conforto e estilo aos nossos companheiros de quatro patas.
+        Após um período afastada para cuidar da saúde, Fabiana voltou com ainda mais energia e inspiração. Há dois anos,
+        o
+        Ateliê My Pet retomou suas atividades e, desde então, não parou de crescer, conquistando cada vez mais
+        admiradores
+        com peças que refletem todo o carinho e atenção em cada detalhe. Hoje, o ateliê está mais forte e vibrante do
+        que
+        nunca, transformando amor e talento em produtos que encantam tanto os pets quanto seus donos.</p>
+    </div>
+  </secction>
 
   <div id="products">
     <h1>Loja do Ateliê</h1>
@@ -621,6 +671,7 @@
     </div>
   </div> -->
 
+  <script src="Assets/JS/index.js"></script>
   <script src="Assets/JS/Store.js"></script>
 </body>
 

@@ -11,6 +11,16 @@ body {
     overflow-x: hidden;
 }
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -23,11 +33,11 @@ body {
 
 @keyframes slideIn {
     from {
-        background-position: 180% calc(50% + 3em);
+        background-position: 200% calc(50% + 2em);
     }
 
     to {
-        background-position: right calc(50% + 3em);
+        background-position: 95% calc(50% + 2em);
     }
 }
 
@@ -45,9 +55,9 @@ body {
     position: relative;
     overflow: hidden;
     background-color: #d8c7b0;
-    background-image: url(../Img/Img.Store/Camisa-Macho.png);
+    background-image: url(../Img/Img.Store/Laços-Macho.png);
     background-size: 800px;
-    background-position: right calc(50% + 3em);
+    background-position: 95% calc(50% + 2em);
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
@@ -56,8 +66,6 @@ body {
     align-items: center;
     opacity: 0;
     animation: fadeIn 2s ease-out forwards, slideIn 2s ease-out forwards;
-    border-bottom: 1px solid snow;
-    margin-bottom: 1em;
 }
 
 #pageContent {
@@ -86,6 +94,7 @@ body {
     font-size: 5rem;
     font-weight: bold;
     animation-delay: 1.2s;
+    text-shadow: 1px 1px 1px snow;
 }
 
 #pageContent h2 {
@@ -94,6 +103,7 @@ body {
     font-size: 3rem;
     font-weight: bold;
     animation-delay: 1.5s;
+    text-shadow: 1px 1px 1px snow;
 }
 
 #pageContent p {
@@ -113,8 +123,6 @@ footer {
     color: snow;
     padding: 2rem 5%;
     font-family: Arial, sans-serif;
-    border-top: 1px solid snow;
-    margin-top: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -143,7 +151,7 @@ footer {
 }
 
 #footerInfo a:hover {
-    color: brown;
+    color: #774110;
 }
 
 footer p,
@@ -154,6 +162,48 @@ footer h3 {
 footer h3 {
     font-size: 1.5rem;
     margin-bottom: 1.2rem;
+}
+
+/* Estilizando a tela de carregamaneto*/
+.new-loading-modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #140f07;
+    color: snow;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+    overflow: hidden;
+}
+
+.new-loading-content {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+}
+
+.new-spinner {
+    border: 8px solid snow;
+    border-top: 8px solid #42210a;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 1300px) {
