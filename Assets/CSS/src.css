@@ -5,7 +5,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #140f07;
+    background: #1c1319;
     border: none;
 }
 
@@ -25,12 +25,12 @@
 }
 
 .cart-section .cart::-webkit-scrollbar-track {
-    background: #140f07;
+    background: #1c1319;
     border-radius: 10px;
 }
 
 .cart-section .cart::-webkit-scrollbar-thumb {
-    background: brown;
+    background: #ae8b6d;
     border-radius: 10px;
 }
 

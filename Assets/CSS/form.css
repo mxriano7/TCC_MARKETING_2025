@@ -27,7 +27,7 @@ details summary {
     cursor: pointer;
     font-weight: bold;
     text-wrap: wrap;
-    color: brown;
+    color: #ae8b6d;
 }
 
 details p {
@@ -75,12 +75,12 @@ form {
 }
 
 .input {
-    border: solid 1.5px brown;
+    border: solid 2px #ae8b6d;
     border-radius: 1rem;
     background: none;
     padding: 1rem;
     font-size: 1rem;
-    color: brown;
+    color: #42210a;
     transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
     box-sizing: border-box;
@@ -89,7 +89,7 @@ form {
 
 .input:focus,
 .input:not(:placeholder-shown) {
-    border: 1.5px solid brown;
+    border: 2px solid #42210a;
     outline: none;
 }
 
@@ -98,14 +98,14 @@ form {
     top: -0.5rem;
     left: 1rem;
     transform: scale(0.8);
-    color: brown;
+    color: #42210a;
 }
 
 .user-label {
     position: absolute;
     left: 1rem;
     top: 1rem;
-    color: brown;
+    color: #ae8b6d;
     pointer-events: none;
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: snow;
@@ -136,7 +136,7 @@ form {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: brown;
+    background-color: #42210a;
     color: snow;
     border-radius: 5px;
     padding: 0;
@@ -156,7 +156,7 @@ form {
 
 #openCartInForm,
 #closeFormBtn {
-    background-color: brown;
+    background-color: #42210a;
     color: snow;
     padding: 10px;
     border: none;
@@ -168,7 +168,7 @@ form {
 
 #openCartInForm:hover,
 #closeFormBtn:hover {
-    background-color: black;
+    background-color: #ae8b6d;
 }
 
 .animated-button {
@@ -183,8 +183,8 @@ form {
     background-color: inherit;
     border-radius: 100px;
     font-weight: 600;
-    color: #4e342e;
-    box-shadow: 0 0 0 2px brown;
+    color: #42210a;
+    box-shadow: 0 0 0 2px #42210a;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
@@ -193,7 +193,7 @@ form {
 .animated-button svg {
     position: absolute;
     width: 24px;
-    fill: #4e342e;
+    fill: #42210a;
     z-index: 9;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -213,7 +213,7 @@ form {
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: brown;
+    background-color: #42210a;
     border-radius: 50%;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -250,7 +250,7 @@ form {
 
 .animated-button:active {
     scale: 0.95;
-    box-shadow: 0 0 0 4px brown;
+    box-shadow: 0 0 0 4px #42210a;
 }
 
 .animated-button:hover .circle {
@@ -329,7 +329,7 @@ form {
         display: flex;
         justify-content: center;
         text-align: center;
-        background-color: brown;
+        background-color: #42210a;
         color: snow;
         padding: 0;
         margin: 10px 0;

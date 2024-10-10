@@ -44,6 +44,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 2em;
 }
 
 #itensP1 {
@@ -71,7 +72,7 @@
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow: hidden;
-    width: 100%;
+    width: 75%;
     position: relative;
 }
 
@@ -103,4 +104,58 @@
 
 .card:last-child {
     margin-right: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    #itens {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+    }
+
+    #itensP1 {
+        font-size: 1.4rem;
+    }
+
+    #itensP2 {
+        font-size: 1rem;
+    }
+
+    #itensContent a {
+        padding: 6px 14px;
+        font-size: 1rem;
+    }
+
+    #itensContent {
+        margin: 1em;
+    }
+
+    #itensContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        animation: none;
+    }
+
+    .card {
+        height: 400px;
+        width: 90%;
+        flex: none;
+        opacity: 1;
+
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .card:last-child {
+        margin-right: 1rem;
+    }
 }

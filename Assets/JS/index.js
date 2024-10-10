@@ -88,7 +88,7 @@ function activateAnimations() {
         const rect = content.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
             content.style.opacity = '1';
-            content.style.animation = 'elevate 3s forwards, slideInAbout 3s forwards';
+            content.style.animation = 'slideInAbout 2s forwards';
         } else {
             content.style.opacity = '0';
             content.style.animation = 'none';
@@ -104,23 +104,23 @@ const itensContainer = document.getElementById('itensContainer');
 const itensContent = document.getElementById('itensContent');
 
 function activateItemAnimations() {
+    if (window.innerWidth < 1024) return;
+
     const contentRect = itensContent.getBoundingClientRect();
     const containerRect = itensContainer.getBoundingClientRect();
 
-    // Animação de entrada para o conteúdo
     if (contentRect.top < window.innerHeight && contentRect.bottom >= 0) {
         itensContent.style.animation = 'slideInLeft 2s forwards';
     } else {
-        itensContent.style.animation = 'slideOutLeft 1s forwards'; // Animação de saída
+        itensContent.style.animation = 'slideOutLeft 1s forwards';
     }
 
-    // Animação de entrada para o container
     if (containerRect.top < window.innerHeight && containerRect.bottom >= 0) {
         itensContainer.style.animation = 'slideInRight 4s forwards';
     } else {
-        itensContainer.style.animation = 'slideOutRight 1s forwards'; // Animação de saída
+        itensContainer.style.animation = 'slideOutRight 1s forwards';
     }
 }
 
 window.addEventListener('scroll', activateItemAnimations);
-activateItemAnimations(); // Chama a função inicialmente
+activateItemAnimations();
