@@ -1,4 +1,4 @@
-#about {
+#petShops {
     width: 100vw;
     height: 100vh;
     background-color: #d8c7b0;
@@ -11,7 +11,7 @@
     margin-bottom: 1em;
 }
 
-#about h1 {
+#petShops h1 {
     text-align: center;
     color: #774110; 
     font-size: 4rem;
@@ -20,13 +20,13 @@
     text-shadow: 1px 1px 1px snow;
 }
 
-#aboutContent {
+#petShopsContent {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-#aboutContent p {
+#petShopsContent p {
     font-family: 'Georgia', serif;
     font-size: 1.5rem;
     text-indent: 1em;

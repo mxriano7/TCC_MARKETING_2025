@@ -80,25 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeDisplay('#itensContainer', 3000);
 });
 
-const aboutSection = document.getElementById('about');
-const contents = aboutSection.querySelectorAll('.content');
-
-function activateAnimations() {
-    contents.forEach(content => {
-        const rect = content.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom >= 0) {
-            content.style.opacity = '1';
-            content.style.animation = 'slideInAbout 2s forwards';
-        } else {
-            content.style.opacity = '0';
-            content.style.animation = 'none';
-        }
-    });
-}
-
-window.addEventListener('scroll', activateAnimations);
-activateAnimations();
-
 const itemsSection = document.getElementById('itens');
 const itensContainer = document.getElementById('itensContainer');
 const itensContent = document.getElementById('itensContent');

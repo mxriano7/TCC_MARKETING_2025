@@ -475,6 +475,7 @@ function openOrderForm() {
     const footerSection = document.querySelector('footer');
     const itemsSection = document.getElementById('itens');
     const aboutSection = document.getElementById('about');
+    const petShopsSection = document.getElementById('petShops');
 
     if (cartItems.length > 0) {
         cartSection.classList.toggle('show');
@@ -487,6 +488,7 @@ function openOrderForm() {
         footerSection.style.display = 'none';
         itemsSection.style.display = 'none';
         aboutSection.style.display = 'none';
+        petShopsSection.style.display = 'none';
         window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
         alert('Eita... Não há nenhum produto em seu carrinho vamos mudar isso!');
@@ -496,6 +498,7 @@ function openOrderForm() {
         cartSection.classList.remove('show');
         cartSection.style.display = isCartVisible ? 'none' : 'block';
         toggleCartBtn.textContent = isCartVisible ? 'Abrir Carrinho' : 'Fechar Carrinho';
+        petShopsSection.style.display = '';
         itemsSection.style.display = '';
         aboutSection.style.display = '';
         pageSection.style.display = '';
@@ -514,11 +517,13 @@ function closeOrderForm() {
     const footerSection = document.querySelector('footer');
     const itemsSection = document.getElementById('itens');
     const aboutSection = document.getElementById('about');
+    const petShopsSection = document.getElementById('petShops');
 
     orderSection.style.display = 'none';
     cartSection.classList.remove('show');
     cartSection.style.display = 'none';
     toggleCartBtn.textContent = 'Abrir Carrinho';
+    petShopsSection.style.display = '';
     itemsSection.style.display = '';
     aboutSection.style.display = '';
     pageSection.style.display = '';
@@ -834,6 +839,7 @@ function submitOrder(event) {
     const spinner = document.querySelector('.spinner');
     const itemsSection = document.getElementById('itens');
     const aboutSection = document.getElementById('about');
+    const petShopsSection = document.getElementById('petShops');
 
     event.preventDefault();
 
@@ -848,6 +854,7 @@ function submitOrder(event) {
         orderFormContainer.style.display = 'none';
         itemsSection.style.display = 'none';
         aboutSection.style.display = 'none';
+        petShopsSection.style.display = '';
         pageSection.style.display = '';
         productsSection.style.display = '';
         footerSection.style.display = '';

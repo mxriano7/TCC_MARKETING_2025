@@ -144,9 +144,7 @@
     font-size: 1rem;
     font-weight: bold;
     transition: all 0.3s ease;
-    animation: fadeIn 1.5s ease-out forwards;
-    animation-delay: 2s;
-    opacity: 0;
+    opacity: 1;
 }
 
 #toggleCartBtn:hover {
