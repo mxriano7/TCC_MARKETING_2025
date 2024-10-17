@@ -97,7 +97,7 @@ function activateItemAnimations() {
     }
 
     if (containerRect.top < window.innerHeight && containerRect.bottom >= 0) {
-        itensContainer.style.animation = 'slideInRight 4s forwards';
+        itensContainer.style.animation = 'slideInRight 3s forwards';
     } else {
         itensContainer.style.animation = 'slideOutRight 1s forwards';
     }
@@ -105,3 +105,32 @@ function activateItemAnimations() {
 
 window.addEventListener('scroll', activateItemAnimations);
 activateItemAnimations();
+
+let lastScrollY = window.scrollY;
+let animationTriggered = false;
+
+const aboutContent = document.getElementById('aboutContent');
+
+function activateAboutAnimations() {
+    const sectionRect = aboutContent.getBoundingClientRect();
+
+    const isVisible = sectionRect.top < window.innerHeight && sectionRect.bottom >= 0;
+
+    if (isVisible && !animationTriggered) {
+        if (window.scrollY > lastScrollY) {
+            aboutContent.style.animation = 'slideInAbout 1.5s ease-out forwards';
+        } else {
+            aboutContent.style.animation = 'slideUpAbout 1.5s ease-out forwards';
+        }
+        animationTriggered = true;
+    }
+
+    if (!isVisible) {
+        animationTriggered = false;
+    }
+
+    lastScrollY = window.scrollY;
+}
+
+window.addEventListener('scroll', activateAboutAnimations);
+activateAboutAnimations();

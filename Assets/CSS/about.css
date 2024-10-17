@@ -1,3 +1,39 @@
+@keyframes slideInAbout {
+    0% {
+        transform: translatey(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutAbout {
+    0% {
+        opacity: 1;
+        transform: translatey(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translatey(-100%);
+    }
+}
+
+@keyframes slideUpAbout {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #about {
     width: 100vw;
     height: 100vh;
@@ -11,19 +47,24 @@
     margin-bottom: 1em;
 }
 
-#about h1 {
-    text-align: center;
-    color: #774110; 
-    font-size: 4rem;
-    font-family: "Dancing Script", cursive;
-    margin: 2rem auto 0 auto;
-    text-shadow: 1px 1px 1px snow;
+#aboutContent {
+    width: 90%;
+    margin: 2rem auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    animation: slideInAbout 1.5s forwards;
 }
 
-#aboutContent {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+#about h1 {
+    text-align: left;
+    color: #774110;
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
+    margin: 0 0 1rem 0;
+    text-shadow: 1px 1px 1px snow;
 }
 
 #aboutContent p {
@@ -32,7 +73,32 @@
     text-indent: 1em;
     line-height: 1.4;
     color: #7f6f61;
+    word-break: normal;
+    hyphens: auto;
     margin-bottom: 1em;
     text-align: justify;
-    margin: 1rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    #about {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #aboutContent {
+        max-width: 90%;
+        animation: slideInAbout 1.5s ease-out forwards;
+    }
+
+    #aboutContent p {
+        font-size: 1.2rem;
+        text-align: left;
+    }
 }
