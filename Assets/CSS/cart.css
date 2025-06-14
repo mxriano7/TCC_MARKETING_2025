@@ -132,9 +132,9 @@
 }
 
 #toggleCartBtn {
-    background-color: #ae8b6d;
+    background-color: #42210a;
     color: snow;
-    border-radius: 20px;
+    border-radius: 8px;
     border: 2px solid #42210a;
     margin-top: 15px;
     margin-right: 1em;
@@ -149,7 +149,7 @@
 
 #toggleCartBtn:hover {
     transform: scale(1.05);
-    background-color: #42210a;
+    background-color: #ae8b6d;
     border-radius: 8px;
     color: snow;
 }
@@ -190,6 +190,7 @@
         align-items: flex-start;
         padding: 0;
         margin: 0 auto;
+        overflow-x: hidden;
     }
 
     .cart-section .cart .total {
@@ -280,6 +281,10 @@
         font-size: 1rem;
         margin: 1em auto;
         animation-delay: 2.5s;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        z-index: 1000;
     }
 
     @keyframes slideInCart {

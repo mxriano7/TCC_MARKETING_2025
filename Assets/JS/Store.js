@@ -3,41 +3,52 @@
 // Eventos de DOMContentLoaded.
 document.addEventListener('DOMContentLoaded', function () {
     // Defina aqui o produto padrão.
-    updateProduct('Gola Paul (Macho)', 'Superman-1', '25.00',
-        'O Kit com 10 Unidades Gola Paul (Macho) oferece estilo e conforto para seu pet. Feitas com materiais duráveis, são ideais para passeios e ocasiões especiais.',
-        1, 'Assets/Img/Img.Store/Gola-Paul-1.png');
-    updateProduct('Camisa Pet (Macho)', '15 Lisas', '25.00',
-        'O Kit com 15 Unidades Camisa Pet (Macho) de cores lisas é ideal para seu pet. Feitas com tecido leve, oferecem conforto e estilo para todas as ocasiões.',
-        2, 'Assets/Img/Img.Store/Camisa-Macho.png');
-    updateProduct('Gravata Borboleta (Macho)', 'KIT-15', '25.00',
-        'O Kit com 15 Unidades Gravata Borboleta (Macho) de cores sortidas é ideal para ocasiões especiais. Confeccionadas com materiais de qualidade, elas oferecem estilo e conforto ao seu pet.',
-        3, 'Assets/Img/Img.Store/Gravatas-1.png');
-    updateProduct('Gravata Luxo (Macho)', 'Pato Donald', '25.00',
-        'O Kit com 10 Unidades Gravata Luxo (Macho) é perfeito para seu pet. Feitas com materiais elegantes, proporcionam um toque sofisticado e conforto em todas as ocasiões.',
-        4, 'Assets/Img/Img.Store/Gravatas-Luxo-1.png');
-    updateProduct('Gravata Dia a Dia', 'KIT-15', '25.00',
-        'O Kit com 15 Unidades Gravata Dia a Dia com estampas sortidas é ideal para pets estilosos. Confeccionadas com tecidos leves, oferecem conforto e charme para o uso diário.',
-        5, 'Assets/Img/Img.Store/Gravatas-2.png');
-    updateProduct('Gargantilhas (Fêmea)', 'KIT-15', '25.00',
-        'O Kit com 15 Unidades Gargantilhas (Fêmea) com estampas sortidas é perfeito para seu pet. Confeccionadas com materiais confortáveis, oferecem estilo e versatilidade em todas as ocasiões.',
-        6, 'Assets/Img/Img.Store/Gargantilhas-Femeas.png');
-    updateProduct('Gargantilhas em V com Renda', 'KIT-10', '25.00',
-        'O Kit com 10 Unidades Gargantilhas em V com Renda de cores sortidas é ideal para pets que amam estilo. Confeccionadas com materiais de qualidade, oferecem charme e conforto.',
-        7, 'Assets/Img/Img.Store/Gargantilhas-1.png');
-    updateProduct('Colarinho Mini Pompom (Macho)', 'KIT-10', '25.00',
-        'O Kit com 10 Unidades Colarinho Mini Pompom (Macho) com estampas sortidas é perfeito para pets estilosos. Confeccionados com materiais leves, oferecem conforto e um visual adorável.',
-        8, 'Assets/Img/Img.Store/Colarinho-1.png');
-    updateProduct('Gravata Colarinho (Macho)', 'KIT-15', '25.00',
-        'O Kit com 15 Unidades Gravata Colarinho (Macho) com estampas sortidas é perfeito para ocasiões especiais. Confeccionadas com materiais de qualidade, oferecem estilo e conforto para seu pet.',
-        9, 'Assets/Img/Img.Store/Gravatas-Colarinho-Macho.png');
-    updateProduct('Colarinho (Macho)', 'KIT-10', '25.00',
-        'O Kit com 10 Unidades Colarinho (Macho) com estampas sortidas é perfeito para pets estilosos. Confeccionados com materiais confortáveis, proporcionam um visual charmoso em diversas ocasiões.',
-        10, 'Assets/Img/Img.Store/Colarinho-Macho-1.png');
-    updateProduct('Colarinho (Fêmea)', 'KIT-10', '25.00',
-        'O Kit com 10 Unidades Colarinho (Fêmea) com estampas sortidas é ideal para pets charmosas. Confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião.',
-        11, 'Assets/Img/Img.Store/Colarinho-Femea.png');
+    updateProduct('Kit 15 Peças Amor', 'Amor-1', '21.45',
+        'O Kit com 5 Gargantilhas e 10 Laços Amor oferece estilo e conforto para seu pet. Feitas com materiais duráveis, são ideais para passeios e ocasiões especiais.',
+        1, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Amor(1)).webp');
+    updateProduct('Kit 15 Peças Luxo', 'Luxo-1', '25.00',
+        'O Kit com 5 Gargantilhas Flor Luxo e 10 Laços feitos com tecido leve para máximo conforto pode ter suas cores repetidas e a flor aplicada pode variar conforme o estoque.',
+        2, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Flor_De_Luxo(1)).webp');
+    updateProduct('Kit 15 Peças', 'Kit-1', '21.45',
+        'O Kit com 5 Gargantilhas e 10 Laços, é ideal para ocasiões especiais. Confeccionadas com materiais de qualidade, elas oferecem estilo e conforto ao seu pet.',
+        3, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Rotina(1)).webp');
+    updateProduct('Kit 15 Peças Sereias', 'Kit-1', '21.45',
+        'O Kit com 5 Gargantilhas Sereias e 10 Laços, é ideal para ocasiões especiais. Confeccionadas com materiais de qualidade, elas oferecem estilo e conforto ao seu pet.',
+        4, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Sereia(1)).webp');
+    updateProduct('Gargantilhas Sortidas', 'Kit-15', '30.00',
+        'O Kit com 15 Gargantilhas de estampas sortidas traz modelos que despertam curiosidade: cada uma com um toque único, feita com tecido leve e confortável para o dia a dia.',
+        5, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Sortida(1)).webp');
+    updateProduct('Gargantilhas em V', 'Kit-15', '30.00',
+        'O Kit com 15 Unidades Gargantilhas em V de estampas sortidas é ideal para pets que amam estilo. Confeccionadas com materiais de qualidade, oferecem charme e conforto.',
+        6, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(V(1)).png');
+    updateProduct('Gargantilhas em V com Renda', 'Kit-10', '28.00',
+        'O Kit com 10 Unidades Gargantilhas em V com Renda de estampas sortidas é ideal para pets que amam estilo. Confeccionadas com materiais de qualidade, oferecem charme e conforto.',
+        7, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(V(2)).png');
+    updateProduct('Laçarotes (Fêmea)', 'Kit-15', '30.00',
+        'O Kit com 15 Laçarotes (Fêmea) com estampas sortidas é perfeito para pets estilosas. Confeccionados com materiais leves, oferecem conforto e um visual adorável.',
+        8, 'Assets/Img/Img.Store/Ateliê My Pet/Gravatas/Feminino/Laçarote-Femeas.png');
+    updateProduct('Gravatas Colarinho (Macho)', 'Kit-15', '30.00',
+        'O Kit com 15 Gravatas Colarinho (Macho) com estampas sortidas é perfeito para ocasiões especiais. Confeccionadas com materiais de qualidade, oferecem estilo e conforto para seu pet.',
+        9, 'Assets/Img/Img.Store/Ateliê My Pet/Gravatas/Masculino/Gravatas-Colarinho-Macho.png');
+    updateProduct('Gravatas Luxo', 'Kit-1', '23.00',
+        'O Kit com 5 Gravatas Luxo e 5 Adesivos é um combo que chama atenção: peças cheias de estilo, feitas com materiais confortáveis para deixar seu pet elegante em qualquer ocasião.',
+        10, 'Assets/Img/Img.Store/Ateliê My Pet/Gravatas/Masculino/Gravata_Luxo(1).webp');
+    updateProduct('Kit 4 Laços Max', 'Kit-4', '15.60',
+        'O Kit com 4 Laços Max com estampas sortidas confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião.',
+        11, 'Assets/Img/Img.Store/Ateliê My Pet/Laços/Feminino/Laços(Max(1)).webp');
+    updateProduct('Kit(1) 40 Laços Sortidos', 'Kit-1', '36.00',
+        'O Kit(1) 40 Laços Sortidos confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião. Pode ter suas cores repetidas conforme o estoque',
+        12, 'Assets/Img/Img.Store/Ateliê My Pet/Laços/Feminino/Laços(Sortido(1)).webp');
+    updateProduct('Kit(2) 40 Laços Sortidos', 'Kit-1', '36.00',
+        'O Kit(2) 40 Laços Sortidos confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião. Pode ter suas cores repetidas conforme o estoque',
+        13, 'Assets/Img/Img.Store/Ateliê My Pet/Laços/Masculino/Laços(Sortido(1)).png');
+    updateProduct('Kit 50 Laços (PP) Sortidos', 'Kit-1', '30.00',
+        'O Kit 50 Laços (PP) Sortidos confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião. Pode ter suas cores repetidas conforme o estoque',
+        14, 'Assets/Img/Img.Store/Ateliê My Pet/Laços/Masculino/Laços(Sortido_PP(1)).webp');
+    updateProduct('Pacote 1000 Elásticos', 'Kit-1', '18.40',
+        'O Pacote com 1000 Elásticos oferece praticidade e agilidade para prender topetes, organizar pelos e deixar seu pet sempre estiloso e confortável.',
+        15, 'Assets/Img/Img.Store/Ateliê My Pet/Elásticos/Masculino/Elástico(1).webp');
 
-    // Eventos da barra de navegação.
     const toggleNavBtn = document.getElementById("toggleNavBtn");
     const navLinks = document.querySelector(".nav-links");
     const navBar = document.querySelector(".nav-bar");
@@ -48,12 +59,33 @@ document.addEventListener('DOMContentLoaded', function () {
         toggleNavBtn.classList.toggle("change");
     });
 
-    // Eventos do carrinho de produtos.
     const toggleCartBtn = document.getElementById("toggleCartBtn");
     const closeCartBtn = document.getElementById('closeCart');
     const cartSection = document.querySelector(".cart-section");
     const observer = new MutationObserver(() => {
         handleRemoveProductListeners();
+    });
+
+    function updateCartButton(isCartVisible) {
+        const isMobile = window.innerWidth <= 1024;
+
+        if (isMobile) {
+            toggleCartBtn.innerHTML = '<i class="fas fa-shopping-cart"></i>';
+        } else {
+            toggleCartBtn.textContent = isCartVisible ? 'Fechar Carrinho' : 'Abrir Carrinho';
+        }
+    }
+
+    function refreshCartButton() {
+        const isCartVisible = cartSection.classList.contains('show');
+        updateCartButton(isCartVisible);
+    }
+
+    refreshCartButton();
+
+    window.addEventListener('resize', refreshCartButton);
+
+    document.addEventListener('DOMContentLoaded', () => {
     });
 
     function handleCartForLargerScreens() {
@@ -67,22 +99,19 @@ document.addEventListener('DOMContentLoaded', function () {
             cartSection.classList.add('show');
         }
 
-        toggleCartBtn.textContent = isCartVisible ? 'Abrir Carrinho' : 'Fechar Carrinho';
+        updateCartButton(!isCartVisible);
     }
 
     function handleCartForSmallerScreens() {
         const isCartVisible = cartSection.classList.contains('show');
 
         if (isCartVisible) {
-            cartSection.classList.remove('show');
-            cartSection.classList.remove('slideInCart');
+            cartSection.classList.remove('show', 'slideInCart');
             cartSection.classList.add('slideOutCart');
 
             setTimeout(() => {
                 cartSection.style.display = 'none';
             }, 300);
-
-            toggleCartBtn.textContent = 'Abrir Carrinho';
         } else {
             cartSection.classList.remove('slideOutCart');
             cartSection.classList.add('slideInCart');
@@ -91,9 +120,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 cartSection.style.display = 'block';
                 cartSection.classList.add('show');
             }, 0);
-
-            toggleCartBtn.textContent = 'Fechar Carrinho';
         }
+
+        updateCartButton(!isCartVisible);
     }
 
     toggleCartBtn.addEventListener("click", function () {
@@ -252,7 +281,7 @@ function updateProduct(name, volume, price, description, productId, imageSrc) {
 
 // Adiciona produtos ao carrinho com base no ID, ou alerta se o produto não existir, e atualiza o total.
 function addToCart(productId) {
-    if (productId >= 1 && productId <= 11) {
+    if (productId >= 1 && productId <= 15) {
         addProductToCart(productId);
     } else {
         alert('Produto não encontrado.');
@@ -457,12 +486,16 @@ function updateTotal() {
 function openCartInForm() {
     const cartSection = document.querySelector('.cart-section');
     const isCartVisible = cartSection.classList.contains('show');
+
     cartSection.classList.toggle('show');
     cartSection.style.display = isCartVisible ? 'none' : 'block';
-    toggleCartBtn.textContent = isCartVisible ? 'Abrir Carrinho' : 'Fechar Carrinho';
+
+    const isMobile = window.innerWidth <= 1024;
+    if (isMobile) {
+        updateCartButton(!isCartVisible);
+    }
 }
 
-// Abre o formulário para envio do pedido.
 function openOrderForm() {
     const orderSection = document.querySelector('.order-section');
     const orderFormContainer = document.getElementById('orderFormContainer');
@@ -477,10 +510,18 @@ function openOrderForm() {
     const aboutSection = document.getElementById('about');
     const petShopsSection = document.getElementById('petShops');
 
+    const isMobile = window.innerWidth <= 1024;
+
     if (cartItems.length > 0) {
         cartSection.classList.toggle('show');
         cartSection.style.display = isCartVisible ? 'none' : 'block';
-        toggleCartBtn.textContent = isCartVisible ? 'Abrir Carrinho' : 'Fechar Carrinho';
+
+        if (isMobile) {
+            updateCartButton(!isCartVisible);
+        } else {
+            toggleCartBtn.textContent = isCartVisible ? 'Abrir Carrinho' : 'Fechar Carrinho';
+        }
+
         orderSection.style.display = 'block';
         orderFormContainer.style.display = 'block';
         pageSection.style.display = 'none';
@@ -489,15 +530,22 @@ function openOrderForm() {
         itemsSection.style.display = 'none';
         aboutSection.style.display = 'none';
         petShopsSection.style.display = 'none';
+
         window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-        alert('Eita... Não há nenhum produto em seu carrinho vamos mudar isso!');
+        alert('Eita... Não há nenhum produto em seu carrinho, vamos mudar isso!');
+
         orderSection.style.display = 'none';
         orderFormContainer.style.display = 'none';
-        cartSection.style.display = 'none';
         cartSection.classList.remove('show');
-        cartSection.style.display = isCartVisible ? 'none' : 'block';
-        toggleCartBtn.textContent = isCartVisible ? 'Abrir Carrinho' : 'Fechar Carrinho';
+        cartSection.style.display = 'none';
+
+        if (isMobile) {
+            updateCartButton(false);
+        } else {
+            toggleCartBtn.textContent = 'Abrir Carrinho';
+        }
+
         petShopsSection.style.display = '';
         itemsSection.style.display = '';
         aboutSection.style.display = '';
@@ -507,7 +555,6 @@ function openOrderForm() {
     }
 }
 
-// Fecha o formulário do pedido.
 function closeOrderForm() {
     const orderSection = document.querySelector('.order-section');
     const toggleCartBtn = document.getElementById("toggleCartBtn");
@@ -522,16 +569,25 @@ function closeOrderForm() {
     orderSection.style.display = 'none';
     cartSection.classList.remove('show');
     cartSection.style.display = 'none';
-    toggleCartBtn.textContent = 'Abrir Carrinho';
+
+    const isMobile = window.innerWidth <= 1024;
+    if (isMobile) {
+        updateCartButton(false);
+    } else {
+        toggleCartBtn.textContent = 'Abrir Carrinho';
+    }
+
     petShopsSection.style.display = '';
     itemsSection.style.display = '';
     aboutSection.style.display = '';
     pageSection.style.display = '';
     productsSection.style.display = '';
     footerSection.style.display = '';
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// Exibe as opções de frete no carrinho.
 // Exibe as opções de frete no carrinho.
 function displayShippingOptions(options) {
     const container = document.getElementById('shippingOptionsContainer');
@@ -545,26 +601,22 @@ function displayShippingOptions(options) {
         return;
     }
 
-    let newSelectedOption = selectedShippingOption;
-
     options.forEach(option => {
         const price = parseFloat(option.price);
 
         if (!isNaN(price)) {
             const optionElement = document.createElement('div');
             optionElement.classList.add('shipping-option');
+
             optionElement.innerHTML = `
-                <label>Opção de Frete:<br>
+                <label>
                     <input type="radio" name="shippingOption" value="${price}" data-service="${option.name}">
                     ${option.name}(Correios) - R$ ${price.toFixed(2)}<br>
                     Prazo para entrega: ${option.delivery_time} dias
                 </label>
             `;
-            container.appendChild(optionElement);
 
-            if (price === selectedShippingOption) {
-                newSelectedOption = price;
-            }
+            container.appendChild(optionElement);
         }
     });
 
@@ -652,26 +704,6 @@ function moveSubmitButton() {
 
 window.addEventListener('resize', moveSubmitButton);
 window.addEventListener('load', moveSubmitButton);
-
-// Função para manusear a posição do frete conforme o tamanho da tela.
-function moveShippingOptions() {
-    const shippingOptions = document.getElementById('shippingOptionsContainer');
-    const addressColumn = document.getElementById('addressFormColumn');
-
-    if (window.innerWidth < 1024) {
-        if (!addressColumn.contains(shippingOptions)) {
-            addressColumn.appendChild(shippingOptions);
-        }
-    } else {
-        const formNavBar = document.getElementById('formNavBar');
-        if (formNavBar && !formNavBar.contains(shippingOptions)) {
-            formNavBar.appendChild(shippingOptions);
-        }
-    }
-}
-
-window.addEventListener('DOMContentLoaded', moveShippingOptions);
-window.addEventListener('resize', moveShippingOptions);
 
 // Valida a quantidade do produto, garantindo que fique entre 1 e 2.
 function validateQuantity(input) {

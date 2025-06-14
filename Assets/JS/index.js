@@ -47,7 +47,7 @@ function stopDisplay(interval) {
 
 // Inicializa o comportamento de exibição dos cartões e adiciona eventos de mouse para cada cartão.
 function initializeDisplay(containerSelector, displayDuration) {
-    if (window.innerWidth < 1024) {
+    if (window.innerWidth < 600) {
         return;
     }
 
@@ -84,19 +84,32 @@ const itemsSection = document.getElementById('itens');
 const itensContainer = document.getElementById('itensContainer');
 const itensContent = document.getElementById('itensContent');
 
+let animationTriggeredMobile = false;
+
 function activateItemAnimations() {
-    if (window.innerWidth < 1024) return;
+    const isMobile = window.innerWidth < 1024;
 
     const contentRect = itensContent.getBoundingClientRect();
     const containerRect = itensContainer.getBoundingClientRect();
 
-    if (contentRect.top < window.innerHeight && contentRect.bottom >= 0) {
+    const isInViewport = (rect) => rect.top < window.innerHeight && rect.bottom >= 0;
+
+    if (isMobile) {
+        if (!animationTriggeredMobile && isInViewport(contentRect) && isInViewport(containerRect)) {
+            itensContent.style.animation = 'mobileSlideInLeft 1.5s ease-out forwards';
+            itensContainer.style.animation = 'mobileSlideInRight 1.5s ease-out forwards';
+            animationTriggeredMobile = true;
+        }
+        return;
+    }
+
+    if (isInViewport(contentRect)) {
         itensContent.style.animation = 'slideInLeft 2s forwards';
     } else {
         itensContent.style.animation = 'slideOutLeft 1s forwards';
     }
 
-    if (containerRect.top < window.innerHeight && containerRect.bottom >= 0) {
+    if (isInViewport(containerRect)) {
         itensContainer.style.animation = 'slideInRight 3s forwards';
     } else {
         itensContainer.style.animation = 'slideOutRight 1s forwards';
@@ -118,9 +131,9 @@ function activateAboutAnimations() {
 
     if (isVisible && !animationTriggered) {
         if (window.scrollY > lastScrollY) {
-            aboutContent.style.animation = 'slideInAbout 1.5s ease-out forwards';
+            aboutContent.style.animation = 'slideInAbout 1.75s ease-in-out forwards';
         } else {
-            aboutContent.style.animation = 'slideUpAbout 1.5s ease-out forwards';
+            aboutContent.style.animation = 'slideUpAbout 1.75s ease-in-out forwards';
         }
         animationTriggered = true;
     }
@@ -134,3 +147,52 @@ function activateAboutAnimations() {
 
 window.addEventListener('scroll', activateAboutAnimations);
 activateAboutAnimations();
+
+let imagemAmpliada = null;
+
+const imagens = document.querySelectorAll('.photo-main img');
+
+function desampliar(img) {
+    if (window.innerWidth < 1000) {
+        img.classList.remove('ampliada', 'desampliando');
+        return;
+    }
+    img.classList.add('desampliando');
+    setTimeout(() => {
+        img.classList.remove('ampliada', 'desampliando');
+    }, 400);
+}
+
+imagens.forEach((img) => {
+    const card = img.closest('.product');
+
+    img.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        if (imagemAmpliada && imagemAmpliada !== img) {
+            desampliar(imagemAmpliada);
+        }
+
+        if (img.classList.contains('ampliada')) {
+            desampliar(img);
+            imagemAmpliada = null;
+        } else {
+            img.classList.add('ampliada');
+            imagemAmpliada = img;
+        }
+    });
+
+    card.addEventListener('mouseleave', () => {
+        if (imagemAmpliada === img) {
+            desampliar(img);
+            imagemAmpliada = null;
+        }
+    });
+});
+
+document.addEventListener('click', () => {
+    if (imagemAmpliada) {
+        desampliar(imagemAmpliada);
+        imagemAmpliada = null;
+    }
+});

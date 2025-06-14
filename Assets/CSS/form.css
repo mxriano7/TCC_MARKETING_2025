@@ -7,7 +7,7 @@
 }
 
 #orderFormContainer {
-    max-width: 900px;
+    max-width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@ details summary {
     cursor: pointer;
     font-weight: bold;
     text-wrap: wrap;
-    color: #ae8b6d;
+    color: #774110;
 }
 
 details p {
@@ -41,18 +41,18 @@ details p {
 
 form {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     background-color: snow;
+    justify-content: space-between;
 }
 
 .form-column {
-    width: calc(50% - 10px);
+    width: 30%;
 }
 
 .input-row {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .input-group {
@@ -75,12 +75,12 @@ form {
 }
 
 .input {
-    border: solid 2px #ae8b6d;
+    border: solid 2px #774110;
     border-radius: 1rem;
     background: none;
     padding: 1rem;
     font-size: 1rem;
-    color: #42210a;
+    color: #774110;
     transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
     box-sizing: border-box;
@@ -89,7 +89,7 @@ form {
 
 .input:focus,
 .input:not(:placeholder-shown) {
-    border: 2px solid #42210a;
+    border: 2px solid #774110;
     outline: none;
 }
 
@@ -98,18 +98,18 @@ form {
     top: -0.5rem;
     left: 1rem;
     transform: scale(0.8);
-    color: #42210a;
+    color: #774110;
 }
 
 .user-label {
     position: absolute;
     left: 1rem;
     top: 1rem;
-    color: #ae8b6d;
+    color: #774110;
     pointer-events: none;
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: snow;
-    padding: 0 .2em;
+    padding: 0 0.2em;
 }
 
 #formNavBar {
@@ -122,31 +122,35 @@ form {
 }
 
 #shippingOptionsContainer {
-    width: 60%;
-    justify-content: center;
-    align-items: center;
+    border: solid 2px #774110;
+    border-radius: 1rem;
+    padding: 1em;
+    width: auto;
+    max-width: 76%;
     background-color: snow;
     color: #140f07;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .shipping-option {
-    width: 45%;
+    width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
     text-align: center;
-    background-color: #42210a;
+    background-color: #774110;
     color: snow;
     border-radius: 5px;
     padding: 0;
-    margin: 0 0.5rem;
+    margin: 10px 0;
 }
 
 .shipping-option label {
     display: block;
     width: 100%;
-    padding: 2px;
+    padding: 3px;
     cursor: pointer;
 }
 
@@ -156,7 +160,7 @@ form {
 
 #openCartInForm,
 #closeFormBtn {
-    background-color: #42210a;
+    background-color: #774110;
     color: snow;
     padding: 10px;
     border: none;
@@ -168,7 +172,7 @@ form {
 
 #openCartInForm:hover,
 #closeFormBtn:hover {
-    background-color: #ae8b6d;
+    background-color: #140f07;
 }
 
 .animated-button {
@@ -183,8 +187,8 @@ form {
     background-color: inherit;
     border-radius: 100px;
     font-weight: 600;
-    color: #42210a;
-    box-shadow: 0 0 0 2px #42210a;
+    color: #4e342e;
+    box-shadow: 0 0 0 2px #774110;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
@@ -193,7 +197,7 @@ form {
 .animated-button svg {
     position: absolute;
     width: 24px;
-    fill: #42210a;
+    fill: #4e342e;
     z-index: 9;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -213,7 +217,7 @@ form {
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: #42210a;
+    background-color: #774110;
     border-radius: 50%;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -250,7 +254,7 @@ form {
 
 .animated-button:active {
     scale: 0.95;
-    box-shadow: 0 0 0 4px #42210a;
+    box-shadow: 0 0 0 4px #774110;
 }
 
 .animated-button:hover .circle {
@@ -259,7 +263,7 @@ form {
     opacity: 1;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1300px) {
     #orderFormContainer {
         flex-direction: column;
         align-items: center;
@@ -273,9 +277,21 @@ form {
 
     #orderFormContainer h2 {
         font-size: 1.5rem;
+        text-align: center;
+    }
+
+    details {
+        margin: 0 auto;
+    }
+
+    details summary {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
     }
 
     details p {
+        text-align: left;
         font-size: 1rem;
     }
 
@@ -292,7 +308,7 @@ form {
 
     #formNavBar {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         gap: 10px;
     }
@@ -313,25 +329,35 @@ form {
         height: 25px;
     }
 
-    #shippingOptionsContainer {
-        width: 100%;
+    #shippingOptionsColumn {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         justify-content: center;
         align-items: center;
+        margin-bottom: 1.60em;
+    }
+
+    #shippingOptionsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: none;
         background-color: snow;
         color: #140f07;
         margin-bottom: 1rem;
-        display: flex;
-        flex-direction: column;
+        text-align: center;
+        padding: 1em 0;
+        margin: 0 auto;
     }
 
     .shipping-option {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        background-color: #42210a;
-        color: snow;
-        padding: 0;
-        margin: 10px 0;
+        width: 300px;
+    }
+
+    .animated-button {
+        margin-bottom: 1em;
     }
 }

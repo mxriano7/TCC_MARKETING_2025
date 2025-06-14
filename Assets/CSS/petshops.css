@@ -8,31 +8,74 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    padding: 1em;
     margin-bottom: 1em;
-}
-
-#petShops h1 {
-    text-align: center;
-    color: #774110; 
-    font-size: 4rem;
-    font-family: "Dancing Script", cursive;
-    margin: 2rem auto 0 auto;
-    text-shadow: 1px 1px 1px snow;
+    box-sizing: border-box;
 }
 
 #petShopsContent {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 85%;
+    margin: 2rem auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    border: 1px solid  #1c1319;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #1c1319;
+}
+
+#petShops h1 {
+    text-align: left;
+    color: #774110;
+    font-size: 3.5rem;
+    font-family: "Dancing Script", cursive;
+    margin: 0 0 1rem 0;
+    text-shadow: 1px 1px 1px snow;
+    line-height: 1.2;
 }
 
 #petShopsContent p {
+    margin: 0;
     font-family: 'Georgia', serif;
     font-size: 1.5rem;
     text-indent: 1em;
-    line-height: 1.4;
-    color: #7f6f61;
-    margin-bottom: 1em;
-    text-align: justify;
-    margin: 1rem;
+    line-height: 1.6;
+    color: #42210a;
+    text-shadow: 1px 1px 1px snow;
+    max-width: 100%;
+    text-align: left;
+    direction: ltr;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+@media only screen and (max-width: 1224px) {
+    #petShops {
+        height: auto;
+        padding: 1rem;
+    }
+
+    #petShopsContent {
+        background-color: rgba(216, 199, 176, 0.95);
+        width: 100%;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(28, 19, 25, 0.3);
+    }
+
+    #petShops h1 {
+        margin: 0.5rem auto 1rem;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    #petShopsContent p {
+        font-size: 1.15rem;
+        text-align: justify;
+        text-indent: 0.8em;
+        word-wrap: break-word;
+    }
 }
