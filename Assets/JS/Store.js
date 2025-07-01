@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Defina aqui o produto padrão.
     updateProduct('Kit 15 Peças Amor', 'Amor-1', '21.45',
         'O Kit com 5 Gargantilhas e 10 Laços Amor oferece estilo e conforto para seu pet. Feitas com materiais duráveis, são ideais para passeios e ocasiões especiais.',
-        1, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Amor(1)).webp');
+        1, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Amor(1)).jpg');
     updateProduct('Kit 15 Peças Luxo', 'Luxo-1', '25.00',
         'O Kit com 5 Gargantilhas Flor Luxo e 10 Laços feitos com tecido leve para máximo conforto pode ter suas cores repetidas e a flor aplicada pode variar conforme o estoque.',
         2, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Flor_De_Luxo(1)).webp');
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
         10, 'Assets/Img/Img.Store/Ateliê My Pet/Gravatas/Masculino/Gravata_Luxo(1).webp');
     updateProduct('Kit 4 Laços Max', 'Kit-4', '15.60',
         'O Kit com 4 Laços Max com estampas sortidas confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião.',
-        11, 'Assets/Img/Img.Store/Ateliê My Pet/Laços/Feminino/Laços(Max(1)).webp');
+        11, 'Assets/Img/Img.Store/Ateliê My Pet/Laços/Feminino/Laços(Max(1)).jpg');
     updateProduct('Kit(1) 40 Laços Sortidos', 'Kit-1', '36.00',
         'O Kit(1) 40 Laços Sortidos confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião. Pode ter suas cores repetidas conforme o estoque',
         12, 'Assets/Img/Img.Store/Ateliê My Pet/Laços/Feminino/Laços(Sortido(1)).webp');
@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'O Pacote com 1000 Elásticos oferece praticidade e agilidade para prender topetes, organizar pelos e deixar seu pet sempre estiloso e confortável.',
         15, 'Assets/Img/Img.Store/Ateliê My Pet/Elásticos/Masculino/Elástico(1).webp');
 
+    // Eventos da barra de navegação.
     const toggleNavBtn = document.getElementById("toggleNavBtn");
     const navLinks = document.querySelector(".nav-links");
     const navBar = document.querySelector(".nav-bar");
@@ -59,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         toggleNavBtn.classList.toggle("change");
     });
 
+    // Eventos do carrinho de produtos.
     const toggleCartBtn = document.getElementById("toggleCartBtn");
     const closeCartBtn = document.getElementById('closeCart');
     const cartSection = document.querySelector(".cart-section");
@@ -238,16 +240,56 @@ let selectedProduct = {
 };
 
 const productIdMap = {
-    'Carvalho (670ml)': 'carvalho670ml',
-    'Carvalho (750ml)': 'carvalho750ml',
-    'Amburana (275ml)': 'amburana275ml',
-    'Amburana (670ml)': 'amburana670ml',
-    'Amburana (750ml)': 'amburana750ml',
-    'Prata (275ml)': 'prata275ml',
-    'Prata (670ml)': 'prata670ml',
-    'Jequitibá (275ml)': 'jequitiba275ml',
-    'Kit de 275ml (1A, 1P, 1J)': 'kit275ml',
-    'Kit de 275ml (1A, 1C, 1J)': 'kit275ml'
+    'Kit 15 Peças Amor (Amor-1)': 'Kit15PeçasAmor(Amor-1)',
+    'Kit 15 Peças Amor (Amor-2)': 'Kit15PeçasAmor(Amor-2)',
+    'Kit 15 Peças Luxo (Luxo-1)': 'Kit15PeçasLuxo(Luxo-1)',
+    'Kit 15 Peças Luxo (Luxo-2)': 'Kit15PeçasLuxo(Luxo-2)',
+    'Kit 15 Peças Luxo (Luxo-3)': 'Kit15PeçasLuxo(Luxo-3)',
+    'Kit 15 Peças (Kit-1)': 'Kit15Peças(Kit-1)',
+    'Kit 15 Peças (Kit-2)': 'Kit15Peças(Kit-2)',
+    'Kit 15 Peças (Kit-3)': 'Kit15Peças(Kit-3)',
+    'Kit 15 Peças (Kit-4)': 'Kit15Peças(Kit-4)',
+    'Kit 15 Peças (Kit-5)': 'Kit15Peças(Kit-5)',
+    'Kit 15 Peças (Kit-6)': 'Kit15Peças(Kit-6)',
+    'Kit 15 Peças (Kit-7)': 'Kit15Peças(Kit-7)',
+    'Kit 15 Peças Sereias (Kit-1)': 'Kit15PeçasSereias(Kit-1)',
+    'Kit 15 Peças Sereias (Kit-2)': 'Kit15PeçasSereias(Kit-2)',
+    'Kit 15 Peças Sereias (Kit-3)': 'Kit15PeçasSereias(Kit-3)',
+    'Kit 15 Peças Sereias (Kit-4)': 'Kit15PeçasSereias(Kit-4)',
+    'Kit 15 Peças Sereias (Kit-5)': 'Kit15PeçasSereias(Kit-5)',
+    'Kit 15 Peças Sereias (Kit-6)': 'Kit15PeçasSereias(Kit-6)',
+    'Kit 15 Peças Sereias (Kit-7)': 'Kit15PeçasSereias(Kit-7)',
+    'Kit 15 Peças Sereias (Kit-8)': 'Kit15PeçasSereias(Kit-8)',
+    'Kit 15 Peças Sereias (Kit-9)': 'Kit15PeçasSereias(Kit-9)',
+    'Kit 15 Peças Sereias (Kit-10)': 'Kit15PeçasSereias(Kit-10)',
+    'Gargantilhas Sortidas (Kit-15)': 'GargantilhasSortidas(Kit-15)',
+    'Gargantilhas em V (Kit-15)': 'GargantilhasemV(Kit-15)',
+    'Gargantilhas em V com Renda (Kit-10)': 'GargantilhasemVcomRenda(Kit-10)',
+    'Laçarotes (Fêmea) (Kit-15)': 'Laçarotes(Fêmea)(Kit-15)',
+    'Gravatas Colarinho (Macho) (Kit-15)': 'GravatasColarinho(Macho)(Kit-15)',
+    'Gravatas Luxo (Kit-1)': 'GravatasLuxo(Kit-1)',
+    'Gravatas Luxo (Kit-2)': 'GravatasLuxo(Kit-2)',
+    'Gravatas Luxo (Kit-3)': 'GravatasLuxo(Kit-3)',
+    'Gravatas Luxo (Kit-4)': 'GravatasLuxo(Kit-4)',
+    'Gravatas Luxo (Kit-5)': 'GravatasLuxo(Kit-5)',
+    'Gravatas Luxo (Kit-6)': 'GravatasLuxo(Kit-6)',
+    'Gravatas Luxo (Kit-7)': 'GravatasLuxo(Kit-7)',
+    'Gravatas Luxo (Kit-8)': 'GravatasLuxo(Kit-8)',
+    'Gravatas Luxo (Kit-9)': 'GravatasLuxo(Kit-9)',
+    'Kit 4 Laços Max (Kit-4)': 'Kit4LaçosMax(Kit-4)',
+    'Kit(1) 40 Laços Sortidos (Kit-1)': 'Kit(1)40LaçosSortidos(Kit-1)',
+    'Kit(1) 40 Laços Sortidos (Kit-2)': 'Kit(1)40LaçosSortidos(Kit-2)',
+    'Kit(1) 40 Laços Sortidos (Kit-3)': 'Kit(1)40LaçosSortidos(Kit-3)',
+    'Kit(2) 40 Laços Sortidos (Kit-1)': 'Kit(2)40LaçosSortidos(Kit-1)',
+    'Kit(2) 40 Laços Sortidos (Kit-2)': 'Kit(2)40LaçosSortidos(Kit-2)',
+    'Kit(2) 40 Laços Sortidos (Kit-3)': 'Kit(2)40LaçosSortidos(Kit-3)',
+    'Kit(2) 40 Laços Sortidos (Kit-4)': 'Kit(2)40LaçosSortidos(Kit-4)',
+    'Kit(2) 40 Laços Sortidos (Kit-5)': 'Kit(2)40LaçosSortidos(Kit-5)',
+    'Kit 50 Laços (PP) Sortidos (Kit-1)': 'Kit50Laços(PP)Sortidos(Kit-1)',
+    'Kit 50 Laços (PP) Sortidos (Kit-2)': 'Kit50Laços(PP)Sortidos(Kit-2)',
+    'Kit 50 Laços (PP) Sortidos (Kit-3)': 'Kit50Laços(PP)Sortidos(Kit-3)',
+    'Kit 50 Laços (PP) Sortidos (Kit-4)': 'Kit50Laços(PP)Sortidos(Kit-4)',
+    'Pacote 1000 Elásticos (Kit-1)': 'Pacote1000Elásticos(Kit-1)'
 };
 
 let fetchTimeout = null;
@@ -486,13 +528,18 @@ function updateTotal() {
 function openCartInForm() {
     const cartSection = document.querySelector('.cart-section');
     const isCartVisible = cartSection.classList.contains('show');
+    const toggleCartBtn = document.getElementById("toggleCartBtn");
 
     cartSection.classList.toggle('show');
     cartSection.style.display = isCartVisible ? 'none' : 'block';
 
     const isMobile = window.innerWidth <= 1024;
-    if (isMobile) {
-        updateCartButton(!isCartVisible);
+    if (toggleCartBtn) {
+        if (isMobile) {
+            toggleCartBtn.innerHTML = '<i class="fas fa-shopping-cart"></i>';
+        } else {
+            toggleCartBtn.textContent = !isCartVisible ? 'Fechar Carrinho' : 'Abrir Carrinho';
+        }
     }
 }
 
@@ -516,10 +563,12 @@ function openOrderForm() {
         cartSection.classList.toggle('show');
         cartSection.style.display = isCartVisible ? 'none' : 'block';
 
-        if (isMobile) {
-            updateCartButton(!isCartVisible);
-        } else {
-            toggleCartBtn.textContent = isCartVisible ? 'Abrir Carrinho' : 'Fechar Carrinho';
+        if (toggleCartBtn) {
+            if (isMobile) {
+                toggleCartBtn.innerHTML = '<i class="fas fa-shopping-cart"></i>';
+            } else {
+                toggleCartBtn.textContent = !isCartVisible ? 'Fechar Carrinho' : 'Abrir Carrinho';
+            }
         }
 
         orderSection.style.display = 'block';
@@ -540,10 +589,12 @@ function openOrderForm() {
         cartSection.classList.remove('show');
         cartSection.style.display = 'none';
 
-        if (isMobile) {
-            updateCartButton(false);
-        } else {
-            toggleCartBtn.textContent = 'Abrir Carrinho';
+        if (toggleCartBtn) {
+            if (isMobile) {
+                toggleCartBtn.innerHTML = '<i class="fas fa-shopping-cart"></i>';
+            } else {
+                toggleCartBtn.textContent = 'Abrir Carrinho';
+            }
         }
 
         petShopsSection.style.display = '';
@@ -571,10 +622,12 @@ function closeOrderForm() {
     cartSection.style.display = 'none';
 
     const isMobile = window.innerWidth <= 1024;
-    if (isMobile) {
-        updateCartButton(false);
-    } else {
-        toggleCartBtn.textContent = 'Abrir Carrinho';
+    if (toggleCartBtn) {
+        if (isMobile) {
+            toggleCartBtn.innerHTML = '<i class="fas fa-shopping-cart"></i>';
+        } else {
+            toggleCartBtn.textContent = 'Abrir Carrinho';
+        }
     }
 
     petShopsSection.style.display = '';
