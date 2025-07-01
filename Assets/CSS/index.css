@@ -272,4 +272,24 @@ footer h3 {
         height: 30px;
         border-width: 6px;
     }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+        margin: 1rem 0;
+    }
+
+    footer h3 {
+        font-size: calc(1rem + 0.5vw);
+    }
+
+    footer p {
+        font-size: calc(0.75rem + 0.5vw);
+        margin-bottom: 1.2rem;
+    }
+
+    #footerInfo {
+        text-align: center;
+    }
 }
