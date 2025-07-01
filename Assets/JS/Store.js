@@ -879,7 +879,7 @@ async function fetchFreight() {
 
     if (postalCode && Object.keys(units).length > 0 && lastValidChange) {
         try {
-            const response = await fetch('https://servercachacacapitao.vercel.app/calculateFreight', {
+            const response = await fetch('https://serveramp.vercel.app/calculateFreight', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -1001,7 +1001,7 @@ function submitOrder(event) {
 
     loadingModal.style.display = 'flex';
 
-    fetch('https://servercachacacapitao.vercel.app/sendOrder', {
+    fetch('https://serveramp.vercel.app/sendOrder', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
