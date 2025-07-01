@@ -4,6 +4,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    style-src 'self' https://unpkg.com https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+    script-src 'self' https://www.googletagmanager.com 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=';
+    connect-src 'self' https://serveramp.vercel.app/ https://www.googletagmanager.com https://www.google-analytics.com;
+    img-src 'self' data: https:;
+    frame-src 'self';
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+    upgrade-insecure-requests;">
   <link rel="icon" type="image/png" href="Assets/Img/Src/Logo(2).png">
   <title>Ateliê My Pet</title>
   <link rel="stylesheet" href="Assets/CSS/src.css">
@@ -682,8 +694,7 @@
             <h3>Variedades</h3>
             <button class="version-btn" data-product="Kit 4 Laços Max" data-volume="Kit-4" data-price="15.60"
               data-description="O Kit com 4 Laços Max com estampas sortidas confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião."
-              data-product-id="11"
-              data-image-src="Assets/Img/Img.Store/Ateliê My Pet/Laços/Feminino/Laços(Max(1)).jpg">
+              data-product-id="11" data-image-src="Assets/Img/Img.Store/Ateliê My Pet/Laços/Feminino/Laços(Max(1)).jpg">
               1
             </button>
           </div>
