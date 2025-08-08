@@ -11,7 +11,7 @@
 
 #products h1 {
     text-align: center;
-    color: #774110;
+    color: #42210a;
     font-size: 4rem;
     font-family: "Dancing Script", cursive;
     margin: 2rem auto 0 auto;
@@ -51,7 +51,7 @@
 }
 
 .photo-container {
-    width: 50%;
+    width: 35%;
 }
 
 .photo-main img {
@@ -71,6 +71,7 @@
     transition: transform 0.4s ease, opacity 0.4s ease;
     border-radius: 8px;
     z-index: 1;
+    background-color: #d8c7b0;
 }
 
 .photo-main img.ampliada {
@@ -103,7 +104,7 @@
     border-radius: 12px;
     border: 2px solid #42210a;
     background-color: snow;
-    width: 40%;
+    width: 58%;
     height: 250px;
     overflow: hidden;
 }
@@ -360,7 +361,7 @@
     }
 
     .version-btn {
-        width: 2.5rem;
+        width: 100px;
         margin: 6px 0;
         font-size: 1rem;
         padding: 10px;

@@ -1,0 +1,213 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1c1319;
+    background-color: #1c1319;
+    overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#marketing {
+    position: relative;
+    overflow: hidden;
+    background-color: #d8c7b0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    margin-bottom: 1em;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+#marketingContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 160px 1em 1em 1em;
+}
+
+#marketingContent h1,
+#marketingContent h2,
+#marketingContent p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+    text-align: left;
+}
+
+#marketingContent h1 {
+    font-family: "Dancing Script", cursive;
+    color: #ff5c87;
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation-delay: 1s;
+    text-shadow: 1px 1px 1px snow;
+}
+
+#marketingContent h2 {
+    font-family: "Dancing Script", cursive;
+    color: #1c1319;
+    font-size: 2.15rem;
+    font-weight: bold;
+    animation-delay: 1.5s;
+    text-shadow: 1px 1px 1px snow;
+}
+
+#marketingContent p {
+    color: #7f6f61;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    animation-delay: 2s;
+    direction: ltr;
+    word-wrap: break-word;
+    hyphens: auto;
+    text-indent: 1rem;
+    text-shadow: 1px 1px 1px snow;
+}
+
+#pink {
+    color: #ff5c87;
+    text-shadow: 1px 1px 1px snow;
+}
+
+#green {
+    color: #004c59;
+    text-shadow: 1px 1px 1px snow;
+}
+
+#black {
+    color: #1c1319;
+    text-shadow: 1px 1px 1px snow;
+}
+
+footer {
+    background-color: #1c1319;
+    color: snow;
+    padding: 2rem 5%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footerLogo,
+#footerInfo {
+    flex: 1;
+    text-align: center;
+}
+
+#footerInfo {
+    text-align: left;
+}
+
+#footerLogo img {
+    max-width: 300px;
+    height: auto;
+}
+
+#footerInfo a {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: snow;
+    transition: color 0.3s ease;
+}
+
+#footerInfo a:hover {
+    color: #ff5c87;
+}
+
+footer p,
+footer h3 {
+    margin: 1.2rem 0;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+@media only screen and (max-width: 1224px) {
+    #marketingContent {
+        align-items: flex-start;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    #marketingContent h1,
+    #marketingContent h2,
+    #marketingContent p {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        opacity: 0;
+        animation: fadeIn 1.2s ease-out forwards;
+    }
+
+    #marketingContent h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #ff5c87;
+        line-height: 1.6;
+        margin-top: 0.5rem;
+        margin-bottom: 0.2rem;
+        animation-delay: 1s;
+    }
+
+    #marketingContent h2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #1c1319;
+        margin-top: 0.3rem;
+        margin-bottom: 0.5rem;
+        animation-delay: 1.5s;
+    }
+
+    #marketingContent p {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.6;
+        color: #7f6f61;
+        margin-bottom: 0.5rem;
+        animation-delay: 2s;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+        margin: 1rem 0;
+    }
+
+    footer h3 {
+        font-size: calc(1rem + 0.5vw);
+    }
+
+    footer p {
+        font-size: calc(0.75rem + 0.5vw);
+        margin-bottom: 1.2rem;
+    }
+
+    #footerInfo {
+        text-align: center;
+    }
+}

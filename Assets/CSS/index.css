@@ -37,7 +37,7 @@ body {
     }
 
     to {
-        background-position: 95% calc(50% + 2em);
+        background-position: 80% calc(50% + 2em);
     }
 }
 
@@ -47,7 +47,7 @@ body {
     }
 
     to {
-        background-position: 30% center;
+        background-position: 50% center;
     }
 }
 
@@ -55,9 +55,9 @@ body {
     position: relative;
     overflow: hidden;
     background-color: #d8c7b0;
-    background-image: url(../Img/Img.Store/Laços-Macho.png);
-    background-size: 800px;
-    background-position: 95% calc(50% + 2em);
+    background-image: url(../Img/Mascote.png);
+    background-size: 280px;
+    background-position: 80% calc(50% + 2em);
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
@@ -66,7 +66,7 @@ body {
     align-items: center;
     opacity: 0;
     margin-bottom: 1em;
-    animation: fadeIn 2s ease-out forwards, slideIn 2s ease-out forwards;
+    animation: fadeIn 2s ease-out forwards, slideIn 3s ease-out forwards;
 }
 
 #pageContent {
@@ -90,7 +90,7 @@ body {
 
 #pageContent h1 {
     font-family: "Dancing Script", cursive;
-    color: #774110;
+    color: #ff5c87;
     font-size: 5rem;
     font-weight: bold;
     animation-delay: 1s;
@@ -99,7 +99,7 @@ body {
 
 #pageContent h2 {
     font-family: "Dancing Script", cursive;
-    color: #7f6f61;
+    color: #004c59;
     font-size: 3rem;
     font-weight: bold;
     animation-delay: 1.5s;
@@ -152,7 +152,7 @@ footer {
 }
 
 #footerInfo a:hover {
-    color: #774110;
+    color: #ff5c87;
 }
 
 footer p,
@@ -195,7 +195,7 @@ footer h3 {
 
 .new-spinner {
     border: 8px solid snow;
-    border-top: 8px solid #774110;
+    border-top: 8px solid #ff5c87;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -208,7 +208,7 @@ footer h3 {
 
 @media only screen and (max-width: 1224px) {
     #page {
-        background-size: calc(700px + 10vw);
+        background-size: calc(200px + 10vw);
         background-position: center center;
         text-align: center;
         height: 100vh;
@@ -241,36 +241,28 @@ footer h3 {
     #pageContent h2 {
         font-size: clamp(2rem, 3vw, 2rem);
         margin: 1rem auto;
-        color: snow;
         animation-delay: 3.5s;
         text-shadow: 1px 1px 1px #1c1319;
+        color: snow;
+        text-align: center;
     }
 
     #pageContent p {
         font-size: calc(0.9rem + 0.5vw);
         font-weight: 300;
         max-width: 100%;
-        text-align: center;
         margin: 0 auto;
         animation-delay: 4s;
         text-shadow: 1px 1px 1px #1c1319;
         color: snow;
+        text-align: center;
+
     }
 
     #mainContent a {
         padding: 6px 14px;
         font-size: 1rem;
         animation-delay: 2.5s;
-    }
-
-    .new-loading-message {
-        font-size: 0.4rem;
-    }
-
-    .new-spinner {
-        width: 30px;
-        height: 30px;
-        border-width: 6px;
     }
 
     footer {
@@ -291,5 +283,15 @@ footer h3 {
 
     #footerInfo {
         text-align: center;
+    }
+
+    .new-loading-message {
+        font-size: 0.4rem;
+    }
+
+    .new-spinner {
+        width: 30px;
+        height: 30px;
+        border-width: 6px;
     }
 }

@@ -3,51 +3,18 @@
 // Eventos de DOMContentLoaded.
 document.addEventListener('DOMContentLoaded', function () {
     // Defina aqui o produto padrão.
-    updateProduct('Kit 15 Peças Amor', 'Amor-1', '21.45',
-        'O Kit com 5 Gargantilhas e 10 Laços Amor oferece estilo e conforto para seu pet. Feitas com materiais duráveis, são ideais para passeios e ocasiões especiais.',
-        1, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Amor(1)).jpg');
-    updateProduct('Kit 15 Peças Luxo', 'Luxo-1', '25.00',
-        'O Kit com 5 Gargantilhas Flor Luxo e 10 Laços feitos com tecido leve para máximo conforto pode ter suas cores repetidas e a flor aplicada pode variar conforme o estoque.',
-        2, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Flor_De_Luxo(1)).webp');
-    updateProduct('Kit 15 Peças', 'Kit-1', '21.45',
-        'O Kit com 5 Gargantilhas e 10 Laços, é ideal para ocasiões especiais. Confeccionadas com materiais de qualidade, elas oferecem estilo e conforto ao seu pet.',
-        3, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Rotina(1)).webp');
-    updateProduct('Kit 15 Peças Sereias', 'Kit-1', '21.45',
-        'O Kit com 5 Gargantilhas Sereias e 10 Laços, é ideal para ocasiões especiais. Confeccionadas com materiais de qualidade, elas oferecem estilo e conforto ao seu pet.',
-        4, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Sereia(1)).webp');
-    updateProduct('Gargantilhas Sortidas', 'Kit-15', '30.00',
-        'O Kit com 15 Gargantilhas de estampas sortidas traz modelos que despertam curiosidade: cada uma com um toque único, feita com tecido leve e confortável para o dia a dia.',
-        5, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(Sortida(1)).webp');
-    updateProduct('Gargantilhas em V', 'Kit-15', '30.00',
-        'O Kit com 15 Unidades Gargantilhas em V de estampas sortidas é ideal para pets que amam estilo. Confeccionadas com materiais de qualidade, oferecem charme e conforto.',
-        6, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(V(1)).png');
-    updateProduct('Gargantilhas em V com Renda', 'Kit-10', '28.00',
-        'O Kit com 10 Unidades Gargantilhas em V com Renda de estampas sortidas é ideal para pets que amam estilo. Confeccionadas com materiais de qualidade, oferecem charme e conforto.',
-        7, 'Assets/Img/Img.Store/Ateliê My Pet/Gargantilhas/Feminino/Gargantilhas(V(2)).png');
-    updateProduct('Laçarotes (Fêmea)', 'Kit-15', '30.00',
-        'O Kit com 15 Laçarotes (Fêmea) com estampas sortidas é perfeito para pets estilosas. Confeccionados com materiais leves, oferecem conforto e um visual adorável.',
-        8, 'Assets/Img/Img.Store/Ateliê My Pet/Gravatas/Feminino/Laçarote-Femeas.png');
-    updateProduct('Gravatas Colarinho (Macho)', 'Kit-15', '30.00',
-        'O Kit com 15 Gravatas Colarinho (Macho) com estampas sortidas é perfeito para ocasiões especiais. Confeccionadas com materiais de qualidade, oferecem estilo e conforto para seu pet.',
-        9, 'Assets/Img/Img.Store/Ateliê My Pet/Gravatas/Masculino/Gravatas-Colarinho-Macho.png');
-    updateProduct('Gravatas Luxo', 'Kit-1', '23.00',
-        'O Kit com 5 Gravatas Luxo e 5 Adesivos é um combo que chama atenção: peças cheias de estilo, feitas com materiais confortáveis para deixar seu pet elegante em qualquer ocasião.',
-        10, 'Assets/Img/Img.Store/Ateliê My Pet/Gravatas/Masculino/Gravata_Luxo(1).webp');
-    updateProduct('Kit 4 Laços Max', 'Kit-4', '15.60',
-        'O Kit com 4 Laços Max com estampas sortidas confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião.',
-        11, 'Assets/Img/Img.Store/Ateliê My Pet/Laços/Feminino/Laços(Max(1)).jpg');
-    updateProduct('Kit(1) 40 Laços Sortidos', 'Kit-1', '36.00',
-        'O Kit(1) 40 Laços Sortidos confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião. Pode ter suas cores repetidas conforme o estoque',
-        12, 'Assets/Img/Img.Store/Ateliê My Pet/Laços/Feminino/Laços(Sortido(1)).webp');
-    updateProduct('Kit(2) 40 Laços Sortidos', 'Kit-1', '36.00',
-        'O Kit(2) 40 Laços Sortidos confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião. Pode ter suas cores repetidas conforme o estoque',
-        13, 'Assets/Img/Img.Store/Ateliê My Pet/Laços/Masculino/Laços(Sortido(1)).png');
-    updateProduct('Kit 50 Laços (PP) Sortidos', 'Kit-1', '30.00',
-        'O Kit 50 Laços (PP) Sortidos confeccionados com materiais de qualidade, oferecem estilo e conforto em qualquer ocasião. Pode ter suas cores repetidas conforme o estoque',
-        14, 'Assets/Img/Img.Store/Ateliê My Pet/Laços/Masculino/Laços(Sortido_PP(1)).webp');
-    updateProduct('Pacote 1000 Elásticos', 'Kit-1', '18.40',
-        'O Pacote com 1000 Elásticos oferece praticidade e agilidade para prender topetes, organizar pelos e deixar seu pet sempre estiloso e confortável.',
-        15, 'Assets/Img/Img.Store/Ateliê My Pet/Elásticos/Masculino/Elástico(1).webp');
+    updateProduct('Bombom com Morango (Chocolate)', 'ID1', '9.99',
+        'Morango fresco mergulhado no melhor do chocolate. Um clássico que nunca decepciona, doce, suculento e viciante.<br /><strong>Quantidade:</strong> 01 Unidade.',
+        1, '../Assets/Img/Morango(1).png');
+    updateProduct('Bombom com Morango (Ninho)', 'ID2', '9.99',
+        'A cremosidade do leite Ninho com o azedinho do morango fresco. Uma combinação celestial que derrete na boca e no coração.<br /><strong>Quantidade:</strong> 01 Unidade.',
+        2, '../Assets/Img/Morango(2).png');
+    updateProduct('Bombom com Uva (Ninho)', 'ID3', '9.99',
+        'Uva verde suculenta envolta em cremosidade de leite Ninho, equilíbrio perfeito entre frescor e doçura que explode na boca.<br /><strong>Quantidade:</strong> 02 Unidades.',
+        3, '../Assets/Img/Uva(1).png');
+    updateProduct('Pudim', 'ID4', '5.99',
+        'Textura aveludada, sabor doce na medida e aquela calda caramelizada que é puro aconchego. Pudim de verdade, feito pra apaixonar.<br /><strong>Quantidade:</strong> 01 Unidade.',
+        4, '../Assets/Img/Pudim(1).png');
 
     // Eventos da barra de navegação.
     const toggleNavBtn = document.getElementById("toggleNavBtn");
@@ -240,56 +207,10 @@ let selectedProduct = {
 };
 
 const productIdMap = {
-    'Kit 15 Peças Amor (Amor-1)': 'Kit15PeçasAmor(Amor-1)',
-    'Kit 15 Peças Amor (Amor-2)': 'Kit15PeçasAmor(Amor-2)',
-    'Kit 15 Peças Luxo (Luxo-1)': 'Kit15PeçasLuxo(Luxo-1)',
-    'Kit 15 Peças Luxo (Luxo-2)': 'Kit15PeçasLuxo(Luxo-2)',
-    'Kit 15 Peças Luxo (Luxo-3)': 'Kit15PeçasLuxo(Luxo-3)',
-    'Kit 15 Peças (Kit-1)': 'Kit15Peças(Kit-1)',
-    'Kit 15 Peças (Kit-2)': 'Kit15Peças(Kit-2)',
-    'Kit 15 Peças (Kit-3)': 'Kit15Peças(Kit-3)',
-    'Kit 15 Peças (Kit-4)': 'Kit15Peças(Kit-4)',
-    'Kit 15 Peças (Kit-5)': 'Kit15Peças(Kit-5)',
-    'Kit 15 Peças (Kit-6)': 'Kit15Peças(Kit-6)',
-    'Kit 15 Peças (Kit-7)': 'Kit15Peças(Kit-7)',
-    'Kit 15 Peças Sereias (Kit-1)': 'Kit15PeçasSereias(Kit-1)',
-    'Kit 15 Peças Sereias (Kit-2)': 'Kit15PeçasSereias(Kit-2)',
-    'Kit 15 Peças Sereias (Kit-3)': 'Kit15PeçasSereias(Kit-3)',
-    'Kit 15 Peças Sereias (Kit-4)': 'Kit15PeçasSereias(Kit-4)',
-    'Kit 15 Peças Sereias (Kit-5)': 'Kit15PeçasSereias(Kit-5)',
-    'Kit 15 Peças Sereias (Kit-6)': 'Kit15PeçasSereias(Kit-6)',
-    'Kit 15 Peças Sereias (Kit-7)': 'Kit15PeçasSereias(Kit-7)',
-    'Kit 15 Peças Sereias (Kit-8)': 'Kit15PeçasSereias(Kit-8)',
-    'Kit 15 Peças Sereias (Kit-9)': 'Kit15PeçasSereias(Kit-9)',
-    'Kit 15 Peças Sereias (Kit-10)': 'Kit15PeçasSereias(Kit-10)',
-    'Gargantilhas Sortidas (Kit-15)': 'GargantilhasSortidas(Kit-15)',
-    'Gargantilhas em V (Kit-15)': 'GargantilhasemV(Kit-15)',
-    'Gargantilhas em V com Renda (Kit-10)': 'GargantilhasemVcomRenda(Kit-10)',
-    'Laçarotes (Fêmea) (Kit-15)': 'Laçarotes(Fêmea)(Kit-15)',
-    'Gravatas Colarinho (Macho) (Kit-15)': 'GravatasColarinho(Macho)(Kit-15)',
-    'Gravatas Luxo (Kit-1)': 'GravatasLuxo(Kit-1)',
-    'Gravatas Luxo (Kit-2)': 'GravatasLuxo(Kit-2)',
-    'Gravatas Luxo (Kit-3)': 'GravatasLuxo(Kit-3)',
-    'Gravatas Luxo (Kit-4)': 'GravatasLuxo(Kit-4)',
-    'Gravatas Luxo (Kit-5)': 'GravatasLuxo(Kit-5)',
-    'Gravatas Luxo (Kit-6)': 'GravatasLuxo(Kit-6)',
-    'Gravatas Luxo (Kit-7)': 'GravatasLuxo(Kit-7)',
-    'Gravatas Luxo (Kit-8)': 'GravatasLuxo(Kit-8)',
-    'Gravatas Luxo (Kit-9)': 'GravatasLuxo(Kit-9)',
-    'Kit 4 Laços Max (Kit-4)': 'Kit4LaçosMax(Kit-4)',
-    'Kit(1) 40 Laços Sortidos (Kit-1)': 'Kit(1)40LaçosSortidos(Kit-1)',
-    'Kit(1) 40 Laços Sortidos (Kit-2)': 'Kit(1)40LaçosSortidos(Kit-2)',
-    'Kit(1) 40 Laços Sortidos (Kit-3)': 'Kit(1)40LaçosSortidos(Kit-3)',
-    'Kit(2) 40 Laços Sortidos (Kit-1)': 'Kit(2)40LaçosSortidos(Kit-1)',
-    'Kit(2) 40 Laços Sortidos (Kit-2)': 'Kit(2)40LaçosSortidos(Kit-2)',
-    'Kit(2) 40 Laços Sortidos (Kit-3)': 'Kit(2)40LaçosSortidos(Kit-3)',
-    'Kit(2) 40 Laços Sortidos (Kit-4)': 'Kit(2)40LaçosSortidos(Kit-4)',
-    'Kit(2) 40 Laços Sortidos (Kit-5)': 'Kit(2)40LaçosSortidos(Kit-5)',
-    'Kit 50 Laços (PP) Sortidos (Kit-1)': 'Kit50Laços(PP)Sortidos(Kit-1)',
-    'Kit 50 Laços (PP) Sortidos (Kit-2)': 'Kit50Laços(PP)Sortidos(Kit-2)',
-    'Kit 50 Laços (PP) Sortidos (Kit-3)': 'Kit50Laços(PP)Sortidos(Kit-3)',
-    'Kit 50 Laços (PP) Sortidos (Kit-4)': 'Kit50Laços(PP)Sortidos(Kit-4)',
-    'Pacote 1000 Elásticos (Kit-1)': 'Pacote1000Elásticos(Kit-1)'
+    'Bombom com Morango (Chocolate) (ID1)': 'ID1',
+    'Bombom com Morango (Ninho) (ID2)': 'ID2',
+    'Pudim (ID4)': 'ID4',
+    'Bombom com Uva (Ninho) (ID3)': 'ID3'
 };
 
 let fetchTimeout = null;
@@ -323,7 +244,7 @@ function updateProduct(name, volume, price, description, productId, imageSrc) {
 
 // Adiciona produtos ao carrinho com base no ID, ou alerta se o produto não existir, e atualiza o total.
 function addToCart(productId) {
-    if (productId >= 1 && productId <= 15) {
+    if (productId >= 1 && productId <= 4) {
         addProductToCart(productId);
     } else {
         alert('Produto não encontrado.');
@@ -355,7 +276,7 @@ function addProductToCart(productId) {
             const quantityInput = cartItem.querySelector('.quantity');
             let currentQuantity = parseInt(quantityInput.value);
             currentQuantity = isNaN(currentQuantity) || currentQuantity < 1 ? 1 : currentQuantity;
-            if (currentQuantity < 2) {
+            if (currentQuantity < 10) {
                 currentQuantity++;
                 quantityInput.value = currentQuantity;
                 updateSubtotal(quantityInput);
@@ -427,13 +348,12 @@ function createCartItem(itemIdentifier, price) {
     quantityInput.classList.add('quantity');
     quantityInput.value = '1';
     quantityInput.min = '1';
-    quantityInput.max = '12';
+    quantityInput.max = '10';
     quantityInput.autocomplete = 'off';
     quantityInput.name = 'quantity';
     quantityInput.addEventListener('change', function () {
         validateQuantity(quantityInput);
         updateSubtotal(quantityInput);
-
     });
     cartItem.appendChild(quantityInput);
 
@@ -630,7 +550,6 @@ function closeOrderForm() {
         }
     }
 
-    petShopsSection.style.display = '';
     itemsSection.style.display = '';
     aboutSection.style.display = '';
     pageSection.style.display = '';
@@ -762,8 +681,8 @@ window.addEventListener('load', moveSubmitButton);
 function validateQuantity(input) {
     if (input.classList.contains('quantity')) {
         let value = parseInt(input.value);
-        if (value > 2) {
-            input.value = 1;
+        if (value > 10) {
+            input.value = 10;
         } else if (value < 1) {
             input.value = 1;
         }
@@ -879,7 +798,7 @@ async function fetchFreight() {
 
     if (postalCode && Object.keys(units).length > 0 && lastValidChange) {
         try {
-            const response = await fetch('https://serveramp.vercel.app/calculateFreight', {
+            const response = await fetch('https://server-mrdoce.vercel.app/calculateFreight', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -1001,7 +920,7 @@ function submitOrder(event) {
 
     loadingModal.style.display = 'flex';
 
-    fetch('https://serveramp.vercel.app/sendOrder', {
+    fetch('https://server-mrdoce.vercel.app/sendOrder', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -59,14 +59,14 @@
     opacity: 0;
     animation: slideInAbout 1.75s ease-in-out forwards;
     padding: 2rem;
-    border: 1px solid  #1c1319;
+    border: 1px solid #1c1319;
     border-radius: 20px;
     box-shadow: 0 4px 8px #1c1319;
 }
 
 #about h1 {
     text-align: left;
-    color: #774110;
+    color: #42210a;
     font-size: 3.5rem;
     font-family: "Dancing Script", cursive;
     margin: 0 0 1rem 0;
@@ -87,6 +87,10 @@
     direction: ltr;
     word-wrap: break-word;
     hyphens: auto;
+}
+
+#aboutContent strong {
+    color: #ff5c87;
 }
 
 @media only screen and (max-width: 1224px) {
@@ -115,6 +119,7 @@
         font-size: 1.15rem;
         text-align: justify;
         text-indent: 0.8em;
+         line-height: 1.4;
         word-wrap: break-word;
     }
 }

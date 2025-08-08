@@ -60,7 +60,8 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;
     justify-content: center;
     z-index: 3000;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .loading-content {
@@ -78,7 +79,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .spinner {
     border: 8px solid snow;
-    border-top: 8px solid #774110;
+    border-top: 8px solid #ff5c87;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -107,8 +108,10 @@ input[type=number]::-webkit-outer-spin-button {
 @media only screen and (max-width: 1024px) {
     .loading-content {
         width: 80%;
-        height: auto;
-        padding: 15px;
+        height: 100%;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .spinner {
@@ -118,6 +121,8 @@ input[type=number]::-webkit-outer-spin-button {
 
     #loadingMessage {
         font-size: 16px;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .status-icon {
